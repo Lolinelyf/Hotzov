@@ -1,0 +1,106 @@
+.header {
+  width: 100%;
+  background-color: #0E2EB6;
+
+  &__container {
+    position: relative;
+    height: 20vw;
+
+    @media (min-width: $tablet-size-port) {
+      position: relative;
+      height: 300px;
+    }
+  }
+
+  &__container-logo {
+    position: absolute;
+    width: 50%;
+    height: 12vw;
+    top: 20%;
+    left: 0;
+    padding: 0 30px;
+
+    @media (min-width: $tablet-size-port) {
+      position: absolute;
+      height: auto;
+      width: 50%;
+      top: auto;
+      bottom: 25%;
+      left: 0;
+      padding: 0 30px;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    height: 12vw;
+
+    @media (min-width: $tablet-size-port) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__container-image {
+    position: absolute;
+    width: 50%;
+    height: 18vw;
+    right: 0;
+    top: 10%;
+    padding: 0 30px;
+
+    @media (min-width: $tablet-size-port) {
+      position: absolute;
+      width: 50%;
+      height: auto;
+      right: 0;
+      margin-bottom: -120px;
+      padding: 0 30px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 18vw;
+
+    @media (min-width: $tablet-size-port) {
+      width: 100%;
+      height: 300px;
+    }
+
+    @media (min-width: $tablet-size-land) {
+      height: 100%;
+    }
+  }
+
+  &__miracle {
+    position: absolute;
+    font-family: AmaticSC-Regular;
+    transform: rotate(-12deg);
+    font-size: 4vw;
+    line-height: 3vw;
+    right: 17vw;
+    top: 18%;
+    color: #0E2EB6;  
+    animation: blink 60s infinite;
+
+    @media (min-width: $tablet-size-port) {
+      font-size: 6.5vw;
+      line-height: 5.5vw;
+      right: 14vw;
+      top: 20%;
+    }
+
+    @media (min-width: $desktop-size-small) {
+      font-size: 75px;
+      line-height: 65px;
+      right: 190px;
+      top: 60px;
+    }
+  }
+
+  @keyframes blink {
+    from { color: #0E2EB6;}
+    to { color: #002fff;}
+   }
+}

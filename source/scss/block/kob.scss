@@ -1,0 +1,139 @@
+.kob {
+  width: 100%;
+  background-color: #F2F2F2;
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1260px;
+    flex-wrap: wrap;
+  }
+
+  &__otz {
+    position: relative;
+    width: 32vw;
+    height: 30vw;
+
+    @media (min-width: $tablet-size-land) {
+      width: 370px;
+      height: 370px;
+    }
+
+  }
+
+  &__people {
+    width: 30vw;
+    height: 30vw;
+    margin-left: -1px;
+
+    @media (min-width: $tablet-size-land) {
+      width: 370px;
+      height: 370px;
+    }
+  }
+
+  &__otz-blank {
+    position: absolute;
+    background-image: url("../img/background-massage.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 23.5vw;
+    height: 14vw;
+    bottom: -3vw;
+    right: -7px;
+
+    @media (min-width: $tablet-size-land) {
+      width: 282px;
+      height: 137px;
+      bottom: 0;
+      right: -27px;
+    }
+
+  }
+
+  &__otz-blank:hover &__otz-s {
+    display: inline-block;
+    -webkit-line-clamp: none;
+    -webkit-box-orient: none;
+    background-color: #0E2EB6;
+    color: #FFFFFF;
+    border-radius: 2px 25px;
+    text-align: left;
+    height: auto;
+    width: 600px;
+    left: -335px;
+    margin-bottom: 20px;
+    padding: 15px;
+    transition: .3s;
+    opacity: .9;
+  }
+
+  &__otz-name {
+    position: absolute;
+    width: 10vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+    left: 5vw;
+    top: 1vw;
+
+    @media (min-width: $tablet-size-land) {
+      width: 200px;
+      font-size: 18px;
+      left: 60px;
+      top: 10px;
+    }
+  }
+
+  &__otz-s {
+    position: absolute;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    width: 20vw;
+    font-size: 1vw;
+    left: 20px;
+    bottom: 4.5vw;
+    overflow: hidden;
+
+    @media (min-width: $tablet-size-land) {
+      font-size: 14px;
+      bottom: 25px;
+      width: 267px;
+    }
+  }
+
+  &__otz-container {
+    padding: 5vw 1vw 1vw 0;
+
+    @media (min-width: $tablet-size-land) {
+      padding: 60px 30px 20px 0;
+    }
+  }
+
+  &__people-container &__people:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+      z-index: 5;
+      transition: .3s;
+  } 
+
+  &__people-container {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 0 45px;
+    box-shadow: -5px -5px 5px #919191;
+    width: 29.5vw;
+    height: 29.5vw;
+    
+    @media (min-width: $tablet-size-land) {
+      width: 365px;
+      height: 365px;
+    }
+  }
+
+  &__people-container &__people {
+    transition: 1s;
+    display: block;
+  }
+}

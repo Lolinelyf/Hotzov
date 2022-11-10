@@ -1,0 +1,59 @@
+.navigation {
+  height: 80px;
+
+  @media (min-width: $tablet-size-land) {
+    height: 200px;
+  }
+
+  &__container {
+    padding: 0 60px 0 0;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+
+    @media (min-width: $tablet-size-land) {
+      padding-top: 80px;
+    }
+  }
+
+  &__links {
+    text-decoration: none;
+    color: #0E2EB6;
+    font-size: 2.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 2.7vw;
+    text-align: center;
+    width: 23vw;
+
+    @media (min-width: $tablet-size-land) {
+      font-size: 26px;
+      width: 250px;
+      padding-top: 30px;
+    }
+  }
+
+  &__links:hover {
+    box-shadow:
+      1px 1px #0E2EB6,
+      2px 2px #0E2EB6,
+      3px 3px #0E2EB6,
+      4px 4px #0E2EB6,
+      5px 5px #0E2EB6,
+      6px 6px #0E2EB6,
+      7px 7px #0E2EB6,
+      -5px -5px #0E2EB6,
+      -2px -2px #0E2EB6,
+      -3px -3px #0E2EB6,
+      -4px -4px #0E2EB6,
+      -5px -5px #0E2EB6,
+      -6px -6px #0E2EB6,
+      -7px -7px #0E2EB6;
+    -webkit-transform: translate(15px, 7px);
+    transform: translate(15px, 7px);
+    background-color: #FFFFFF;
+  }
+}

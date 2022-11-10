@@ -1,0 +1,73 @@
+.footer {
+  width: 100%;
+  background-color: #0E2EB6;
+
+  &__container {
+    position: relative;
+    height: 15vw;
+
+    @media (min-width: $tablet-size-port) {
+      position: relative;
+      height: 35vw;
+    }
+
+    @media (min-width: $tablet-size-land) {
+      height: 300px;
+
+    }
+  }
+
+  &__logo-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 45%;
+
+    @media (min-width: $tablet-size-port) {
+      position: absolute;
+      left: 0;
+      bottom: 15%;
+      width: 45%;
+    }
+
+    @media (min-width: $tablet-size-land) {
+      bottom: 23%;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    height: 12vw;
+
+    @media (min-width: $tablet-size-port) {
+      height: auto;
+    }
+  }
+
+  &__contacts {
+    position: absolute;
+    right: 0;
+    bottom: 1vw;
+    width: 45%;
+
+    @media (min-width: $tablet-size-port) {
+      position: absolute;
+      right: 0;
+      bottom: 20%;
+      width: 45%;
+    }
+
+    @media (min-width: $tablet-size-land) {
+      bottom: 20%;
+    }
+  }
+
+  &__contacts-links {
+    color: #FFFFFF;
+    font-size: 1vw;
+
+    @media (min-width: $tablet-size-land) {
+      font-size: 13px;
+    }
+  }
+}

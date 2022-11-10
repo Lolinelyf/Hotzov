@@ -1,0 +1,137 @@
+.hero {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  min-height: 54vw;
+  padding: 0 35px;
+  max-width: 1644px;
+  background-image: url("../img/Vector.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: $desktop-size-average-1) {
+    min-height: 882px;
+  }
+
+  &__prew {
+    position: relative;
+  }
+
+  &__prew-text {
+    width: 80%;
+  }
+
+  &__prew-mt-title {
+    color: #0E2EB6;
+    font-size: 1.8vw;
+    padding-bottom: 2vw;
+    padding-top: 6vw;
+    text-transform: uppercase;
+
+    @media (min-width: $desktop-size-small) {
+      padding-top: 90px;
+    }
+
+    @media (min-width: $desktop-size-average-1) {
+      font-size: 30px;
+      padding-bottom: 44px;
+    }
+  }
+
+  &__prew-mt-title div {
+    display: inline-block;
+  }
+
+  &__prew-mt-text {
+    color: #000000;
+    font-size: 1.5vw;
+    width: 78%;
+
+    @media (min-width: $desktop-size-average-1) {
+      font-size: 22px;
+    }
+  }
+
+  &__prew-mt-text div {
+    display: inline-block;
+  }
+
+  &__prew-mt-man-container {
+    position: absolute;
+    padding: 0;
+    right: 0;
+    top: 1vw;
+    width: 24vw;
+    height: 35vw;
+
+    @media (min-width: $desktop-size-average-1) {
+      padding: 0;
+      top: 15px;
+      width: 378px;
+      height: 479px;
+    }
+  }
+
+  &__prew-images {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3vw;
+    
+    @media (min-width: $desktop-size-small) {
+      padding-top: 2.5vw;
+    }
+
+    @media (min-width: $desktop-size-average-1) {
+      padding-top: 50px;
+    }
+  }
+
+  &__prew-img-container {
+    display: inline-block;
+    overflow: hidden;
+    width: 23.8vw;
+    height: 16.3vw;
+    transition: .3s;
+    border-radius: 15px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.87);
+
+    @media (min-width: $desktop-size-average-1) {
+      width: 390px;
+      height: 265px;
+    }
+  }
+
+  &__prew-img-container &__prew-img {
+    transition: 1s;
+    display: block;
+  }
+
+  &__prew-img-container &__prew-img:hover {
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+    z-index: 5;
+    transition: .6s;
+  }
+
+  &__prew-img-container:hover {
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
+    z-index: 5;
+    transition: .3s;
+    border-radius: 45px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.87);   
+  } 
+
+  &__prew-img {
+    width: 23.8vw;
+    height: 16.3vw;
+
+    @media (min-width: $desktop-size-average-1) {
+      width: 390px;
+      height: 265px;
+    }
+  }
+}
+

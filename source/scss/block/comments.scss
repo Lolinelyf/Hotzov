@@ -1,0 +1,114 @@
+.comments {
+  width: 100%;
+  position: relative;
+
+  &__girl {
+    width: 30vw;
+    height: 35vw;
+
+    @media (min-width: $desktop-size-average) {
+      width: 429px;
+      height: 517px;
+    }
+  }
+
+  &__csk {
+    font-size: 1.9vw;
+    text-align: left;
+    color: #000000;
+    margin-left: 40vw;
+    margin-top: -23.5vw;
+    padding-bottom: 4vw;
+
+    @media (min-width: $desktop-size-small) {
+      font-size: 24px;
+      margin-left: 500px;
+      margin-top: -350px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__csk-c {
+    width: 52vw;
+
+    @media (min-width: $desktop-size-average) {
+      width: 751px;;
+    }
+  }
+
+  &__csk-s {
+    width: 52vw;
+
+    @media (min-width: $desktop-size-average) {
+      width: 703px;
+    }
+  }
+
+  &__font {
+    opacity: 1;
+  }
+
+  &__font:hover {
+    opacity: 1;
+    transition: .3s;
+    border-radius: 5px 40px;
+    font-size: 3vw;
+
+    @media (min-width: $desktop-size-average) {
+      font-size: 60px;
+      background-color: #0231ff;
+    }
+  }
+
+  &__span {
+    font-weight: 700;
+  }
+
+  &__font {
+    font-family: AmaticSC-Regular;
+    font-size: 3.3vw;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #0E2EB6;
+    text-align: center;
+    border-radius: 40px 5px;
+    height: fit-content;
+    width: 28vw;
+    transition: .5s;
+
+    @media (min-width: $desktop-size-average) {
+      width: 397px;
+      font-size: 64px;
+    }
+  }
+
+  &__pozdr-link {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    text-decoration: none;
+    width: 28vw;
+    height: 6.8vw;
+
+    @media (min-width: $desktop-size-average) {
+      width: 397px;
+      height: 97px;
+      right: 15px;
+    }
+  }
+
+  &__otziv-link {
+    position: absolute;
+    top: 30px;
+    right: 35%;
+    text-decoration: none;
+    width: 28vw;
+    height: 6.8vw;
+
+    @media (min-width: $desktop-size-average) {
+      width: 397px;
+      height: 97px;
+      right: 440px;
+    }
+  }
+}

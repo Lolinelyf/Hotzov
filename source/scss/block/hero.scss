@@ -1,16 +1,18 @@
 .hero {
+  width: 100%;
+  min-height: max-content;
+  padding: 0px 15px;
   margin-right: auto;
   margin-left: auto;
-  width: 100%;
-  min-height: 54vw;
-  padding: 0 35px;
-  max-width: 1644px;
-  background-image: url("../img/Vector.svg");
+  max-width: 1260px;
+  background-color: #f7f7f7;
   background-repeat: no-repeat;
   background-size: contain;
+  border-radius: 30px;
 
-  @media (min-width: $desktop-size-average-1) {
-    min-height: 882px;
+  @media (min-width: $tablet-size-land) {
+    border-radius: 90px;
+    padding: 15px 15px;
   }
 
   &__prew {
@@ -18,24 +20,35 @@
   }
 
   &__prew-text {
-    width: 80%;
+    width: 100%;
+
+    @media (min-width: $mobile-size-land) {
+      width: 80%;
+    }
   }
 
   &__prew-mt-title {
     color: #0E2EB6;
-    font-size: 1.8vw;
     padding-bottom: 2vw;
-    padding-top: 6vw;
     text-transform: uppercase;
+    font-size: 11px;
+    padding-top: 15px;
+
+    @media (min-width: $mobile-size-land) {
+      font-size: 2.3vw;
+      padding-top: 15px;
+    }
+
+    @media (min-width: $tablet-size-land) {
+      font-size: 26px;
+      padding-top: 40px;
+    }
 
     @media (min-width: $desktop-size-small) {
-      padding-top: 90px;
+      font-size: 30px;
+      padding-top: 40px;
     }
 
-    @media (min-width: $desktop-size-average-1) {
-      font-size: 30px;
-      padding-bottom: 44px;
-    }
   }
 
   &__prew-mt-title div {
@@ -44,11 +57,22 @@
 
   &__prew-mt-text {
     color: #000000;
-    font-size: 1.5vw;
-    width: 78%;
+    font-size: 10px;
+    width: 100%;
 
-    @media (min-width: $desktop-size-average-1) {
-      font-size: 22px;
+    @media (min-width: $mobile-size-land) {
+      font-size: 2vw;
+      width: 68vw;
+    }
+
+    @media (min-width: $tablet-size-land) {
+      font-size: 20px;
+      width: 700px;
+    }
+
+    @media (min-width: $desktop-size-small) {
+      font-size: 24px;
+      width: 830px;
     }
   }
 
@@ -57,16 +81,23 @@
   }
 
   &__prew-mt-man-container {
-    position: absolute;
-    padding: 0;
-    right: 0;
-    top: 1vw;
-    width: 24vw;
-    height: 35vw;
+    display: none;
 
-    @media (min-width: $desktop-size-average-1) {
+    @media (min-width: $mobile-size-land) {
+      display: block;
+      position: absolute;
       padding: 0;
-      top: 15px;
+      right: -25px;
+      top: 0px;
+      width: 27vw;
+      height: 38vw;
+    }
+
+    @media (min-width: $tablet-size-land) {
+      top: -25px;
+    }
+
+    @media (min-width: $desktop-size-small) {
       width: 378px;
       height: 479px;
     }
@@ -75,30 +106,42 @@
   &__prew-images {
     display: flex;
     justify-content: space-between;
-    padding-top: 3vw;
-    
-    @media (min-width: $desktop-size-small) {
-      padding-top: 2.5vw;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 25px;
+
+    @media (min-width: $mobile-size-land) {
+      padding-top: 4vw;
     }
 
-    @media (min-width: $desktop-size-average-1) {
-      padding-top: 50px;
-    }
   }
 
   &__prew-img-container {
     display: inline-block;
     overflow: hidden;
-    width: 23.8vw;
-    height: 16.3vw;
     transition: .3s;
-    border-radius: 15px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.87);
+    border-radius: 25px;
+    width: 27.5vw;
+    height: 18vw;  
 
-    @media (min-width: $desktop-size-average-1) {
-      width: 390px;
-      height: 265px;
+    @media (min-width: $mobile-size-land) {
+      width: 29.5vw;
+      height: 19vw;
     }
+
+    @media (min-width: $tablet-size-land) {
+      border-radius: 50px;
+      width: 330px;
+      height: 209px;
+    }
+
+    @media (min-width: $desktop-size-small) {
+      border-radius: 50px;
+      width: 370px;
+      height: 241px;
+    }
+
   }
 
   &__prew-img-container &__prew-img {
@@ -120,17 +163,29 @@
     transform: scale(.9);
     z-index: 5;
     transition: .3s;
-    border-radius: 45px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.87);   
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.87);   
   } 
 
   &__prew-img {
-    width: 23.8vw;
-    height: 16.3vw;
+    border-radius: 25px;
+    width: 27.5vw;
+    height: 18.1vw;  
 
-    @media (min-width: $desktop-size-average-1) {
-      width: 390px;
-      height: 265px;
+    @media (min-width: $mobile-size-land) {
+      width: 29.5vw;
+      height: 19vw;
+    }
+
+    @media (min-width: $tablet-size-land) {
+      border-radius: 50px;
+      width: 330px;
+      height: 210px; 
+    }
+
+    @media (min-width: $desktop-size-small) {
+      border-radius: 50px;
+      width: 370px;
+      height: 242px;
     }
   }
 }

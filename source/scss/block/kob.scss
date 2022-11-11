@@ -25,6 +25,7 @@
     width: 30vw;
     height: 30vw;
     margin-left: -1px;
+    border-radius: 0 45px;
 
     @media (min-width: $tablet-size-land) {
       width: 370px;
@@ -41,6 +42,7 @@
     height: 14vw;
     bottom: -3vw;
     right: -7px;
+    cursor: pointer;
 
     @media (min-width: $tablet-size-land) {
       width: 282px;
@@ -51,30 +53,22 @@
 
   }
 
-  &__otz-blank:hover &__otz-s {
-    display: inline-block;
-    -webkit-line-clamp: none;
-    -webkit-box-orient: none;
-    background-color: #0E2EB6;
-    color: #FFFFFF;
-    border-radius: 2px 25px;
-    text-align: left;
-    height: auto;
-    width: 600px;
-    left: -335px;
-    margin-bottom: 20px;
-    padding: 15px;
-    transition: .3s;
-    opacity: .9;
-  }
-
   &__otz-name {
     position: absolute;
-    width: 10vw;
-    font-size: 1.5vw;
+    width: 15vw;
+    font-size: 2.5vw;
     font-weight: 600;
-    left: 5vw;
-    top: 1vw;
+    left: 3vw;
+    top: 2vw;
+    
+    
+
+    @media (min-width: $tablet-size-port) {
+      width: 10vw;
+      font-size: 1.5vw;
+      left: 6vw;
+      top: .7vw;
+    }
 
     @media (min-width: $tablet-size-land) {
       width: 200px;
@@ -84,16 +78,33 @@
     }
   }
 
+  &__otz-name-hidden {
+    display: block;
+    font-size: 1.5vw;
+    width: 15vw;
+    margin-top: 0vw;
+    margin-left: 7vw;
+
+    @media (min-width: $tablet-size-port) {
+      display: none;;
+    }
+  }
+
   &__otz-s {
-    position: absolute;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    width: 20vw;
-    font-size: 1vw;
-    left: 20px;
-    bottom: 4.5vw;
-    overflow: hidden;
+    display: none; 
+
+    @media (min-width: $tablet-size-port) {
+      position: absolute; 
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      width: 22.6vw;
+      font-size: 11px;
+      left: 10px;
+      width: 22vw;
+      bottom: 4.5vw;
+    }
 
     @media (min-width: $tablet-size-land) {
       font-size: 14px;
@@ -114,7 +125,7 @@
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
       transform: scale(1.1);
-      z-index: 5;
+      // z-index: 5;
       transition: .3s;
   } 
 
@@ -136,4 +147,5 @@
     transition: 1s;
     display: block;
   }
+
 }

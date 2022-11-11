@@ -74,28 +74,37 @@
   }
 
   &__miracle {
+    display: none;
+
+    @media (min-width: $tablet-size-port) {
+    display: block;
     position: absolute;
     font-family: AmaticSC-Regular;
     transform: rotate(-12deg);
-    font-size: 4vw;
-    line-height: 3vw;
-    right: 17vw;
-    top: 18%;
+    font-size: 6vw;
+    line-height: 5vw;
+    right: 15vw;
+    left: auto;
+    top: auto;
+    bottom: 17%;
     color: #0E2EB6;  
     animation: blink 60s infinite;
+    }
 
-    @media (min-width: $tablet-size-port) {
+    @media (min-width: $tablet-size-land) {
       font-size: 6.5vw;
       line-height: 5.5vw;
       right: 14vw;
-      top: 20%;
+      top: 15%;
+      left: auto;
     }
 
     @media (min-width: $desktop-size-small) {
       font-size: 75px;
       line-height: 65px;
-      right: 190px;
+      right: 185px;
       top: 60px;
+      left: auto;
     }
   }
 

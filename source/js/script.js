@@ -207,5 +207,16 @@ ScrollTrigger.create({
 	trigger: els,
 	start: 'top 100%',
 	end: 'bottom 20%',
-	scrub: true,
 });
+
+// Когда пользователь нажимает на div, откройте всплывающее окно
+function myFunction() {
+  var overlay = document.getElementById("overlay");
+  overlay.classList.toggle("show");
+};
+
+// const ClickShow = document.querySelector('.modal__button');
+// const OvL = document.querySelector('.overlay');
+// ClickShow.addEventListener("click", () =>
+// OvL.classList.toggle("overlay_modal")
+// );

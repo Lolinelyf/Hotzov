@@ -4,14 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- <link href="css/bvi.min.css" rel="stylesheet" type="text/css"> -->
   <link href="css/main.css" rel="stylesheet" type="text/css">
-
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
-  <!-- <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"> -->
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
@@ -19,7 +12,16 @@
 </head>
 
 <body>
+  <div class="overlay" id="overlay"></div>
+  <div class="modal">
+      <div class="modal__content">
+        <div class="modal__button">
+        </div>
+        <p class="modal__content-text">dsadsa dsa dsa sad asd asd sad dsa</p>
+      </div>
 
+  </div>
+  
 
   <header class="header">
 
@@ -107,8 +109,8 @@
 
     </section>
 
-    <section class="hero">
-      <div class="container">
+    <section class="container">
+      <div class="hero">
         <div class="hero__prew">
           <div class="hero__prew-text">
             <h2 class="hero__prew-mt-title">Заголовок текста про историю университета</h2>
@@ -443,19 +445,20 @@
           <div class="kob__otz">
             <div class="kob__people-container">
             <img class="kob__people" src="img/m.png"></div>
-            <div class="kob__otz-blank">
-              <p class="kob__otz-name">Максим</p>
+            <div class="kob__otz-blank" onclick="myFunction()">
+              <p class="kob__otz-name">Максим<span class="kob__otz-name-hidden">text here...</span></p>
               <p class="kob__otz-s">отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв
                 отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв </p>
             </div>
           </div>
+          
         </div>
         <div class="kob__otz-container">
           <div class="kob__otz">
             <div class="kob__people-container">
             <img class="kob__people" src="img/d.png"></div>
             <div class="kob__otz-blank">
-              <p class="kob__otz-name">Татьяна</p>
+              <p class="kob__otz-name">Татьяна<span class="kob__otz-name-hidden">text here...</span></p>
               <p class="kob__otz-s">отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв
                 отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв </p>
             </div>
@@ -466,7 +469,7 @@
             <div class="kob__people-container">
             <img class="kob__people" src="img/m.png"></div>
             <div class="kob__otz-blank">
-              <p class="kob__otz-name">Максим</p>
+              <p class="kob__otz-name">Максим<span class="kob__otz-name-hidden">text here...</span></p>
               <p class="kob__otz-s">отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв
                 отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв </p>
             </div>
@@ -477,7 +480,7 @@
             <div class="kob__people-container">
             <img class="kob__people" src="img/d.png"></div>
             <div class="kob__otz-blank">
-              <p class="kob__otz-name">Татьяна</p>
+              <p class="kob__otz-name">Татьяна<span class="kob__otz-name-hidden">text here...</span></p>
               <p class="kob__otz-s">отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв
                 отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв </p>
             </div>
@@ -488,7 +491,7 @@
             <div class="kob__people-container">
             <img class="kob__people" src="img/m.png"></div>
             <div class="kob__otz-blank">
-              <p class="kob__otz-name">Максим</p>
+              <p class="kob__otz-name">Максим<span class="kob__otz-name-hidden">text here...</span></p>
               <p class="kob__otz-s">отзыв отзыв отзтзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв
                 отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзывdisplay: -webkit-box;
                 -webkit-line-clamp: 3;
@@ -521,7 +524,7 @@
             <div class="kob__people-container">
             <img class="kob__people" src="img/d.png"></div>
             <div class="kob__otz-blank">
-              <p class="kob__otz-name">Татьяна</p>
+              <p class="kob__otz-name">Татьяна<span class="kob__otz-name-hidden">text here...</span></p>
               <p class="kob__otz-s">отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв
                 отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв </p>
             </div>
@@ -532,7 +535,7 @@
             <div class="kob__people-container">
             <img class="kob__people" src="img/m.png"></div>
             <div class="kob__otz-blank">
-              <p class="kob__otz-name">Максим</p>
+              <p class="kob__otz-name">Максим<span class="kob__otz-name-hidden">text here...</span></p>
               <p class="kob__otz-s">отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв
                 отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв </p>
             </div>
@@ -543,7 +546,7 @@
             <div class="kob__people-container">
             <img class="kob__people" src="img/d.png"></div>
             <div class="kob__otz-blank">
-              <p class="kob__otz-name">Татьяна</p>
+              <p class="kob__otz-name">Татьяна<span class="kob__otz-name-hidden">text here...</span></p>
               <p class="kob__otz-s">отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв
                 отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв </p>
             </div>
@@ -554,7 +557,7 @@
             <div class="kob__people-container">
             <img class="kob__people" src="img/m.png"></div>
             <div class="kob__otz-blank">
-              <p class="kob__otz-name">Максим</p>
+              <p class="kob__otz-name">Максим<span class="kob__otz-name-hidden">text here...</span></p>
               <p class="kob__otz-s">отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв
                 отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв </p>
             </div>
@@ -565,7 +568,7 @@
             <div class="kob__people-container">
             <img class="kob__people" src="img/d.png"></div>
             <div class="kob__otz-blank">
-              <p class="kob__otz-name">Татьяна</p>
+              <p class="kob__otz-name">Татьяна<span class="kob__otz-name-hidden">text here...</span></p>
               <p class="kob__otz-s">отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв
                 отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв </p>
             </div>
@@ -576,7 +579,7 @@
             <div class="kob__people-container">
             <img class="kob__people" src="img/m.png"></div>
             <div class="kob__otz-blank">
-              <p class="kob__otz-name">Максим</p>
+              <p class="kob__otz-name">Максим<span class="kob__otz-name-hidden">text here...</span></p>
               <p class="kob__otz-s">отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв
                 отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв </p>
             </div>
@@ -587,7 +590,7 @@
             <div class="kob__people-container">
             <img class="kob__people" src="img/d.png"></div>
             <div class="kob__otz-blank">
-              <p class="kob__otz-name">Татьяна</p>
+              <p class="kob__otz-name">Татьяна<span class="kob__otz-name-hidden">text here...</span></p>
               <p class="kob__otz-s">отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв
                 отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв </p>
             </div>
@@ -674,8 +677,7 @@
   <script src="js/ScrollTrigger.min.js"></script>
   <script src="js/gsap.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/single/js.cookie.min.js"></script>
-  <script src="js/single/bvi.min.js"></script>
+
   <script src="js/bundle.js"></script>
 
 </body>

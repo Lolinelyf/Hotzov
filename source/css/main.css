@@ -1353,7 +1353,7 @@ input[type="radio"].visually-hidden {
   margin: auto;
   -webkit-box-shadow: 0 0 15px #000000;
           box-shadow: 0 0 15px #000000;
-  visibility: hgiidden; }
+  visibility: hidden; }
   .modal__button {
     position: absolute;
     width: 30px;

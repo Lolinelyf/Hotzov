@@ -1337,23 +1337,29 @@ input[type="radio"].visually-hidden {
     fill: #ffffff6e; } }
 
 .modal {
-  position: fixed;
-  -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
-  background-color: #ffffffe8;
-  z-index: 11;
-  width: 50%;
-  height: 30%;
-  border-radius: 50px 0;
-  padding: 15px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  -webkit-box-shadow: 0 0 15px #000000;
-          box-shadow: 0 0 15px #000000;
   visibility: hidden; }
+  .modal__modal {
+    position: fixed;
+    background-color: #ffffff;
+    border-radius: 50px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-box-shadow: 0 0 15px #000000;
+            box-shadow: 0 0 15px #000000;
+    padding: 15px;
+    width: 90%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content; }
+    @media (min-width: 1440px) {
+      .modal__modal {
+        width: 50%;
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content; } }
   .modal__button {
     position: absolute;
     width: 30px;
@@ -1362,7 +1368,7 @@ input[type="radio"].visually-hidden {
     top: 10px;
     z-index: 11;
     cursor: pointer; }
-  .modal::before {
+  .modal__modal::before {
     content: '';
     position: absolute;
     width: 25px;
@@ -1373,7 +1379,7 @@ input[type="radio"].visually-hidden {
     border-radius: 50px;
     right: 15px;
     top: 24px; }
-  .modal::after {
+  .modal__modal::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -1387,24 +1393,27 @@ input[type="radio"].visually-hidden {
   .modal__content-text {
     padding: 35px 0;
     color: #000000;
-    font-size: 16px; }
+    font-size: 12px; }
+    @media (min-width: 768px) {
+      .modal__content-text {
+        font-size: 18px; } }
+  .modal__overlay {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #000000bb;
+    margin: auto;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
 
-.overlay.show {
+.modal.show {
   visibility: visible;
-  display: block;
-  position: fixed;
-  height: 100%;
-  width: 100%;
   -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
-  background-color: #000000bb;
-  margin: auto;
-  text-align: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10; }
+  animation: fadeIn 1s; }
 
 @-webkit-keyframes fadeIn {
   from {
@@ -1417,3 +1426,6 @@ input[type="radio"].visually-hidden {
     opacity: 0; }
   to {
     opacity: 1; } }
+
+html {
+  overflow: hidden; }

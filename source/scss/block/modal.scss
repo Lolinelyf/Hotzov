@@ -1,19 +1,23 @@
 .modal {
   visibility: hidden;
 
+
   &__modal {
   position: fixed;
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
   border-radius: 50px 0;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-  box-shadow: 0 0 15px #000000;
-  padding: 15px;
+  box-shadow: 0 0 15px rgb(0, 0, 0);
+  padding: 6px ;
   width: 90%;
   height: min-content;
+  visibility: hidden;
+  opacity: 0;
+
 
   
   @media (min-width: $desktop-size-average){
@@ -22,45 +26,82 @@
   }
   }
 
+  &__content {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
   &__button {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    right: 12px;
-    top: 10px;
+    width: 20px;
+    height: 20px;
+    right: 15px;
+    top: 12px;
     z-index: 11;
     cursor: pointer;
+
+    @media (min-width: $mobile-size-land){
+      width: 30px;
+      height: 30px;
+      right: 12px;
+      top: 10px;
+     }
   }
 
   &__modal::before {
     content: '';
     position: absolute;
-    width: 25px;
     height: 4px;
-    background-color: #000000;
+    background-color: blue;
     transform: rotate(45deg);
     border-radius: 50px;
+    width: 20px;
     right: 15px;
-    top: 24px;
+    top: 20px;
 
+    @media (min-width: $mobile-size-land){
+      top: 24px;
+      width: 25px;
+     }
   }
 
   &__modal::after {
     content: '';
     position: absolute;
-    width: 25px;
     height: 4px;
-    background-color: #000000;
+    background-color: blue;
     transform: rotate(-45deg);
     border-radius: 50px;
+    width: 20px;
     right: 15px;
-    top: 24px;
+    top: 20px;
+
+    @media (min-width: $mobile-size-land){
+      top: 24px;
+      width: 25px;
+     }
+  }
+  
+  &__idx {
+    padding-left: 10px;
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 5px 7px 5px;
+    color: blue;
+    height: 0;
+
+    @media (min-width: $mobile-size-land){
+     padding: 7px 5px 15px 5px;
+    }
   }
 
   &__content-text {
-  padding: 35px 0;
-  color: #000000;
+  color: black;
   font-size: 12px;
+  padding: 5px 5px 0 5px;
 
   @media (min-width: $tablet-size-port){
     font-size: 18px;
@@ -73,30 +114,53 @@
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: #000000bb;
+  background-color: #040e4bde;
   margin: auto;
   text-align: center; 
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-}
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
 
 }
+
+&__img {
+  border-radius: 50px 0;
+  width: 40%;
+  height: 40%;
+  padding-top: 5px;
+  box-shadow: 0 5px rgb(124, 124, 124);
+
+
+  @media (min-width: $mobile-size-land){
+    padding-top: 0;
+    box-shadow: -1px 1px 10px rgb(124, 124, 124),
+    1px -1px 10px rgb(124, 124, 124);
+   }
+            
+}
+}
+
 .modal.show {
   visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;  
+  opacity: 1;
+ 
 }
 
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
+.modal__overlay.showw {
+  visibility: visible;
+  opacity: 1;
 }
 
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
+.modal__modal.showq {
+  visibility: visible;
+  opacity: 1;
+  transition: .2s(+.5s);
+  transform: translate(1%, -1%)
+
 }
 
 html {

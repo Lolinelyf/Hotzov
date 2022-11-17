@@ -1,0 +1,156 @@
+.galary {
+  visibility: hidden;
+
+  &__content {
+    position: relative;
+    width: 65%;
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+    margin: 7% auto;
+  }
+
+  &__button-container {
+    cursor: pointer;
+  }
+
+  &__button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 50%;
+  }
+
+  &__button::after {
+    content: '';
+    position: absolute;
+    right: 7px;
+    top: 24px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(-45deg);
+    border-radius: 50px;
+    width: 35px;
+  }
+
+  &__button::before {
+    content: '';
+    position: absolute;
+    right: 7px;
+    top: 24px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg);
+    border-radius: 50px;
+    width: 35px;
+  }
+
+  &__button-left {
+    cursor: pointer;
+  }
+
+  &__swipe-left {
+    position: absolute;
+    left: 15px;
+    top: 30%;
+    width: 70px;
+    height: 170px;
+    border-radius: 10px;
+  }
+
+  &__swipe-left:hover {
+    background-color: rgba(0, 0, 0, 0.582);
+  }
+
+  &__swipe-left::after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 42.5%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(-45deg);
+    border-radius: 50px;
+    width: 35px;
+  }
+
+  &__swipe-left::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    bottom: 42%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg);
+    border-radius: 50px;
+    width: 35px;
+  }
+
+  &__button-left {
+    cursor: pointer;
+  }
+
+  &__swipe-right {
+    position: absolute;
+    right: 15px;
+    top: 30%;
+    width: 70px;
+    height: 170px;
+    border-radius: 10px;
+ 
+  }
+
+  &__swipe-right:hover {
+    background-color: rgba(0, 0, 0, 0.582);
+  }
+
+  &__swipe-right::after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 42.5%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg);
+    border-radius: 50px;
+    width: 35px;
+  }
+
+  &__swipe-right::before {
+    content: '';
+    position: absolute;
+    right: 15px;
+    bottom: 42%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(-45deg);
+    border-radius: 50px;
+    width: 35px;
+  }
+
+  &__img-prew {
+    width: 100%;
+    height: 100%;
+  
+  }
+
+  &__images-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    background-color: rgba(0, 0, 0, 0.582);
+  }
+ 
+}
+
+.galary.viev {
+  visibility: visible;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}

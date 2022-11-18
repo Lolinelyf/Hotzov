@@ -981,13 +981,11 @@ input[type="radio"].visually-hidden {
   .hero__prew-img-container .hero__prew-img:hover {
     -webkit-transform: scale(1.4);
     transform: scale(1.4);
-    z-index: 5;
     -webkit-transition: .6s;
     transition: .6s; }
   .hero__prew-img-container:hover {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
-    z-index: 5;
     -webkit-transition: .3s;
     transition: .3s;
     -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.87);
@@ -1338,6 +1336,7 @@ input[type="radio"].visually-hidden {
     fill: #ffffff6e; } }
 
 .modal {
+  position: absolute;
   visibility: hidden; }
   .modal__modal {
     position: fixed;
@@ -1479,58 +1478,65 @@ input[type="radio"].visually-hidden {
 html {
   overflow: hidden; }
 
-.galary {
+.gallery {
+  position: fixed;
   visibility: hidden; }
-  .galary__content {
+  .gallery__content {
     position: relative;
     width: 65%;
     height: 70%;
     background-color: white;
-    margin: 7% auto; }
-  .galary__button-container {
+    margin: 7% auto;
+    border-radius: 15px; }
+  .gallery__button-container {
     cursor: pointer; }
-  .galary__button {
+  .gallery__button {
     position: absolute;
-    right: 5px;
-    top: 5px;
+    right: 25px;
+    top: 20px;
     width: 50px;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.582);
-    border-radius: 50%; }
-  .galary__button::after {
+    border-radius: 50%;
+    -webkit-transition: .25s;
+    transition: .25s; }
+  .gallery__button:hover {
+    background-color: rgba(0, 0, 0, 0.582); }
+  .gallery__button::after {
     content: '';
     position: absolute;
-    right: 7px;
+    right: 15px;
     top: 24px;
-    height: 4px;
+    height: 3px;
     background-color: white;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
     border-radius: 50px;
-    width: 35px; }
-  .galary__button::before {
+    width: 20px; }
+  .gallery__button::before {
     content: '';
     position: absolute;
-    right: 7px;
+    right: 15px;
     top: 24px;
-    height: 4px;
+    height: 3px;
     background-color: white;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     border-radius: 50px;
-    width: 35px; }
-  .galary__button-left {
+    width: 20px; }
+  .gallery__button-left {
     cursor: pointer; }
-  .galary__swipe-left {
+  .gallery__swipe-left {
     position: absolute;
     left: 15px;
     top: 30%;
     width: 70px;
     height: 170px;
-    border-radius: 10px; }
-  .galary__swipe-left:hover {
+    border-radius: 10px;
+    -webkit-transition: .25s;
+    transition: .25s; }
+  .gallery__swipe-left:hover {
     background-color: rgba(0, 0, 0, 0.582); }
-  .galary__swipe-left::after {
+  .gallery__swipe-left::after {
     content: '';
     position: absolute;
     left: 15px;
@@ -1541,7 +1547,7 @@ html {
             transform: rotate(-45deg);
     border-radius: 50px;
     width: 35px; }
-  .galary__swipe-left::before {
+  .gallery__swipe-left::before {
     content: '';
     position: absolute;
     left: 15px;
@@ -1552,18 +1558,20 @@ html {
             transform: rotate(45deg);
     border-radius: 50px;
     width: 35px; }
-  .galary__button-left {
+  .gallery__button-right {
     cursor: pointer; }
-  .galary__swipe-right {
+  .gallery__swipe-right {
     position: absolute;
     right: 15px;
     top: 30%;
     width: 70px;
     height: 170px;
-    border-radius: 10px; }
-  .galary__swipe-right:hover {
+    border-radius: 10px;
+    -webkit-transition: .25s;
+    transition: .25s; }
+  .gallery__swipe-right:hover {
     background-color: rgba(0, 0, 0, 0.582); }
-  .galary__swipe-right::after {
+  .gallery__swipe-right::after {
     content: '';
     position: absolute;
     right: 15px;
@@ -1574,7 +1582,7 @@ html {
             transform: rotate(45deg);
     border-radius: 50px;
     width: 35px; }
-  .galary__swipe-right::before {
+  .gallery__swipe-right::before {
     content: '';
     position: absolute;
     right: 15px;
@@ -1585,20 +1593,26 @@ html {
             transform: rotate(-45deg);
     border-radius: 50px;
     width: 35px; }
-  .galary__img-prew {
+  .gallery__img-prew {
     width: 100%;
-    height: 100%; }
-  .galary__images-container {
+    height: 100%;
+    border-radius: 15px;
+    -o-object-fit: none;
+       object-fit: none;
+    background-color: #333; }
+  .gallery__images-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 25%;
-    background-color: rgba(0, 0, 0, 0.582); }
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 15px; }
 
-.galary.viev {
+.gallery.viev {
   visibility: visible;
-  position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 100; }
+  background-color: rgba(0, 0, 0, 0.5); }

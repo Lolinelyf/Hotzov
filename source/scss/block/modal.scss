@@ -1,5 +1,6 @@
 .modal {
-  visibility: hidden;
+  position: absolute;
+  visibility: hidden; 
 
 
   &__modal {
@@ -147,7 +148,6 @@
 .modal.show {
   visibility: visible;
   opacity: 1;
- 
 }
 
 .modal__overlay.showw {

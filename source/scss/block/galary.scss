@@ -1,4 +1,5 @@
-.galary {
+.gallery {
+  position: fixed;
   visibility: hidden;
 
   &__content {
@@ -7,6 +8,7 @@
     height: 70%;
     background-color: rgb(255, 255, 255);
     margin: 7% auto;
+    border-radius: 15px;
   }
 
   &__button-container {
@@ -15,36 +17,40 @@
 
   &__button {
     position: absolute;
-    right: 5px;
-    top: 5px;
+    right: 25px;
+    top: 20px;
     width: 50px;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.582);
     border-radius: 50%;
+    transition: .25s;
+  }
+
+  &__button:hover {
+    background-color: rgba(0, 0, 0, 0.582);
   }
 
   &__button::after {
     content: '';
     position: absolute;
-    right: 7px;
+    right: 15px;
     top: 24px;
-    height: 4px;
+    height: 3px;
     background-color: rgb(255, 255, 255);
     transform: rotate(-45deg);
     border-radius: 50px;
-    width: 35px;
+    width: 20px;
   }
 
   &__button::before {
     content: '';
     position: absolute;
-    right: 7px;
+    right: 15px;
     top: 24px;
-    height: 4px;
+    height: 3px;
     background-color: rgb(255, 255, 255);
     transform: rotate(45deg);
     border-radius: 50px;
-    width: 35px;
+    width: 20px;
   }
 
   &__button-left {
@@ -58,6 +64,7 @@
     width: 70px;
     height: 170px;
     border-radius: 10px;
+    transition: .25s;
   }
 
   &__swipe-left:hover {
@@ -88,7 +95,7 @@
     width: 35px;
   }
 
-  &__button-left {
+  &__button-right {
     cursor: pointer;
   }
 
@@ -99,6 +106,7 @@
     width: 70px;
     height: 170px;
     border-radius: 10px;
+    transition: .25s;
  
   }
 
@@ -133,24 +141,27 @@
   &__img-prew {
     width: 100%;
     height: 100%;
-  
+    border-radius: 15px;
+    object-fit: none;
+    background-color: #333;
   }
 
   &__images-container {
+    display: flex;
+    // justify-content: space-around;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 25%;
     background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 15px;
   }
  
 }
 
-.galary.viev {
+.gallery.viev {
   visibility: visible;
-  position: fixed;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 100;
 }

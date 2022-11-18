@@ -13,65 +13,65 @@ const textP = document.querySelector('.second');
 const els = document.querySelectorAll('.kob__otz-container');
 
 
-// const splitTextP = (el) => {
-// 	el.innerHTML = el.textContent.replace(/(\S*)/g, m => {
-// 		return `<div class="word">` +
-// 			m.replace(/(-|#|@)?\S(-|#|@)?/g, "<div class='letter'>$&</div>") +
-// 			`</div>`;
-// 	});
-// 	return el;
-// };
+const splitTextP = (el) => {
+	el.innerHTML = el.textContent.replace(/(\S*)/g, m => {
+		return `<div class="word">` +
+			m.replace(/(-|#|@)?\S(-|#|@)?/g, "<div class='letter'>$&</div>") +
+			`</div>`;
+	});
+	return el;
+};
 
-// const splitP = splitTextP(textP);
+const splitP = splitTextP(textP);
 
-// function random(min, max) {
-// 	return (Math.random() * (max - min)) + min;
-// }
+function random(min, max) {
+	return (Math.random() * (max - min)) + min;
+}
 
-// Array.from(splitP.querySelectorAll('.letter')).forEach((el, idx) => {
-// 	TweenMax.from(el, 2.5, {opacity: 0, scale: random(.1, 4), x: random(-500, 500), y: random(-500, 500), z: random(-500, 500), delay: idx * 0.01, repeat: 0})
-// });
+Array.from(splitP.querySelectorAll('.letter')).forEach((el, idx) => {
+	TweenMax.from(el, 2.5, {opacity: 0, scale: random(.1, 4), x: random(-500, 500), y: random(-500, 500), z: random(-500, 500), delay: idx * 0.01, repeat: 0})
+});
 
-// const splitText = (el) => {
-// 	el.innerHTML = el.textContent.replace(/(\S*)/g, m => {
-// 		return `<div class="word">` +
-// 			m.replace(/(-|#|@)?\S(-|#|@)?/g, "<div class='letter'>$&</div>") +
-// 			`</div>`;
-// 	});
-// 	return el;
-// };
+const splitText = (el) => {
+	el.innerHTML = el.textContent.replace(/(\S*)/g, m => {
+		return `<div class="word">` +
+			m.replace(/(-|#|@)?\S(-|#|@)?/g, "<div class='letter'>$&</div>") +
+			`</div>`;
+	});
+	return el;
+};
 
-// const split = splitText(text);
+const split = splitText(text);
 
-// function random(min, max) {
-// 	return (Math.random() * (max - min)) + min;
-// }
+function random(min, max) {
+	return (Math.random() * (max - min)) + min;
+}
 
-// Array.from(split.querySelectorAll('.letter')).forEach((el, idx) => {
-// 	gsap.from(el, 2.5, {opacity: 0, scale: random(.1, 1.5), x: random(-500, 500), y: random(-500, 500), z: random(-500, 500), delay: idx * 0.001, repeat: 0})
-// });
+Array.from(split.querySelectorAll('.letter')).forEach((el, idx) => {
+	gsap.from(el, 2.5, {opacity: 0, scale: random(.1, 1.5), x: random(-500, 500), y: random(-500, 500), z: random(-500, 500), delay: idx * 0.001, repeat: 0})
+});
 
-// gsap.from(man, {x: 700, opacity: 0, rotate: 360, duration: 2})
-// gsap.from(TextPrew, {y: -450, duration: 3.2})
+gsap.from(man, {x: 700, opacity: 0, rotate: 360, duration: 2})
+gsap.from(TextPrew, {y: -450, duration: 3.2})
 
-// const splitTextT = (el) => {
-// 	el.innerHTML = el.textContent.replace(/(\S*)/g, m => {
-// 		return `<div class="word">` +
-// 			m.replace(/(-|#|@)?\S(-|#|@)?/g, "<div class='letter'>$&</div>") +
-// 			`</div>`;
-// 	});
-// 	return el;
-// };
+const splitTextT = (el) => {
+	el.innerHTML = el.textContent.replace(/(\S*)/g, m => {
+		return `<div class="word">` +
+			m.replace(/(-|#|@)?\S(-|#|@)?/g, "<div class='letter'>$&</div>") +
+			`</div>`;
+	});
+	return el;
+};
 
-// const splitT = splitTextT(TextPrew);
+const splitT = splitTextT(TextPrew);
 
-// function random(min, max) {
-// 	return (Math.random() * (max - min)) + min;
-// }
+function random(min, max) {
+	return (Math.random() * (max - min)) + min;
+}
 
-// Array.from(splitT.querySelectorAll('.letter')).forEach((el, idx) => {
-// 	gsap.from(el, 2.5, {opacity: 0, scale: random(.1, 4), x: random(-500, 500), y: random(-500, 500), z: random(-500, 500), delay: idx * 0.02, repeat: 0})
-// });
+Array.from(splitT.querySelectorAll('.letter')).forEach((el, idx) => {
+	gsap.from(el, 2.5, {opacity: 0, scale: random(.1, 4), x: random(-500, 500), y: random(-500, 500), z: random(-500, 500), delay: idx * 0.02, repeat: 0})
+});
 const tlOn = gsap.timeline();
 const tlTw = gsap.timeline();
 const tlTh = gsap.timeline();
@@ -129,24 +129,6 @@ function toggleModal() {
 document.querySelector('.modal__button').addEventListener('click', toggleModal);
 document.querySelector('.modal__overlay').addEventListener('click', toggleModal);
 document.querySelectorAll('.kob__otz-container').forEach(el => el.addEventListener('click', toggleModal));
-
-
-
-// function toggleGallery() {
-//   const gallery = document.querySelector('.gallery');
-//   if (!gallery.classList.contains('viev')) {
-
-//     gallery.querySelector('.gallery__img-prew').src = this.querySelector('.hero__prew-img').src;
-
-//   }
-  
-//   gallery.classList.toggle('viev');
-//   };
-  
-// document.querySelectorAll('.hero__prew-img-container').forEach(el => el.addEventListener('click', toggleGallery));
-// document.querySelector('.gallery__button-container').addEventListener('click', toggleGallery);
-// document.querySelector('.gallery__button-left').addEventListener('click', swipeSlide);
-// document.querySelector('.gallery__button-right').addEventListener('click', swipeSlide);
 
 const modal = document.querySelector(".gallery");
 

@@ -130,24 +130,6 @@ document.querySelector('.modal__button').addEventListener('click', toggleModal);
 document.querySelector('.modal__overlay').addEventListener('click', toggleModal);
 document.querySelectorAll('.kob__otz-container').forEach(el => el.addEventListener('click', toggleModal));
 
-
-
-// function toggleGallery() {
-//   const gallery = document.querySelector('.gallery');
-//   if (!gallery.classList.contains('viev')) {
-
-//     gallery.querySelector('.gallery__img-prew').src = this.querySelector('.hero__prew-img').src;
-
-//   }
-  
-//   gallery.classList.toggle('viev');
-//   };
-  
-// document.querySelectorAll('.hero__prew-img-container').forEach(el => el.addEventListener('click', toggleGallery));
-// document.querySelector('.gallery__button-container').addEventListener('click', toggleGallery);
-// document.querySelector('.gallery__button-left').addEventListener('click', swipeSlide);
-// document.querySelector('.gallery__button-right').addEventListener('click', swipeSlide);
-
 const modal = document.querySelector(".gallery");
 
 class Gallery {

@@ -15,6 +15,10 @@
     padding: 15px 15px;
   }
 
+  &__none {
+    display: none;
+  }
+
   &__prew {
     position: relative;
   }
@@ -109,9 +113,12 @@
     width: 100%;
     padding-top: 0;
     padding-bottom: 25px;
+    
+    
 
     @media (min-width: $mobile-size-land) {
       padding-top: 4vw;
+      
     }
 
   }
@@ -119,7 +126,7 @@
   &__prew-img-container {
     display: inline-block;
     overflow: hidden;
-    transition: .3s;
+    transition: none;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.87);
     border-radius: 25px;
     width: 27.5vw;
@@ -151,18 +158,20 @@
   }
 
   &__prew-img-container &__prew-img:hover {
+    transition: .45s;
+  }
+
+  &__prew-img-container &__prew-img:not(:hover) {
     -webkit-transform: scale(1.4);
     -ms-transform: scale(1.4);
     transform: scale(1.4);
     transition: .6s;
+    
   }
 
   &__prew-img-container:hover {
-    -webkit-transform: scale(.9);
-    -ms-transform: scale(.9);
-    transform: scale(.9);
-    transition: .3s;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.87);   
+    transition: .6s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.87);   
   } 
 
   &__prew-img {

@@ -172,7 +172,7 @@ appearance: none;
     @media (min-width: $tablet-size-port) {
       width: 35px;
       left: 15px;
-      top: 42.5%;
+      top: 42%;
     }
   }
 
@@ -254,7 +254,7 @@ appearance: none;
     @media (min-width: $tablet-size-port) {
       width: 35px;
       right: 15px;
-      top: 42.5%;
+      top: 42%;
     }
   }
 
@@ -296,6 +296,7 @@ appearance: none;
     border-radius: 15px;
     object-fit: contain; // адаптация картинки 
     backdrop-filter: blur(10px);
+    
   }
 
   &__images-container {
@@ -366,3 +367,4 @@ appearance: none;
   z-index: 10;
   transition: .25s;
 }
+

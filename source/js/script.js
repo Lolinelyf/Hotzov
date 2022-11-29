@@ -174,11 +174,6 @@ let opn = document.createElement("button");
 opn.classList = "gallery__swipe-right";
 opp.appendChild(opn);
 
-// let ButtonLeftD = document.createElement("button");
-// ButtonLeftD.classList = "gallery__slider-left-d";
-// opq.appendChild(ButtonLeftD);
-
-
 const modal = document.querySelector(".gallery");
 
 class Gallery {
@@ -210,12 +205,6 @@ class Gallery {
       .addEventListener("click", () =>
         this.setModalImage(this.currentIndex + 1)
       );
-
-    // this.modal
-    //   .querySelector(".gallery__slider-left-d")
-    //   .addEventListener("click", () =>
-    //     this.setModalImage(this.currentIndex - 1),
-    //   );
   
     this.initThumbs();
   }
@@ -272,3 +261,25 @@ class Gallery {
 }
 
 const gallery = new Gallery();
+
+
+
+const tabs = document.querySelector(".js-wrapper");
+const tabButton = document.querySelectorAll(".js-tabs");
+const contents = document.querySelectorAll(".jscontent");
+
+tabs.onclick = e => {
+  const id = e.target.dataset.id;
+  if (id) {
+    tabButton.forEach(btn => {
+      btn.classList.remove("activet");
+    });
+    e.target.classList.add("activet");
+
+    contents.forEach(jscontent => {
+      jscontent.classList.remove("activet");
+    });
+    const elementContent = document.getElementById(id);
+    elementContent.classList.add("activet");
+  }
+}

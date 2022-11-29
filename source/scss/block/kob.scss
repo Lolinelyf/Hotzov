@@ -1,6 +1,6 @@
 .kob {
   width: 100%;
-  background-color: #F2F2F2;
+  background-color: #f9f9f9;
 
   &__container {
     display: flex;
@@ -43,6 +43,7 @@
     height: 14vw;
     bottom: -3vw;
     right: -7px;
+  
 
     @media (min-width: $tablet-size-land) {
       width: 282px;

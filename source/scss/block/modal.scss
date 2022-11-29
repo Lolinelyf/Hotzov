@@ -53,7 +53,7 @@
     content: '';
     position: absolute;
     height: 4px;
-    background-color: blue;
+    background-color: #2e2e44;
     transform: rotate(45deg);
     border-radius: 50px;
     width: 20px;
@@ -70,7 +70,7 @@
     content: '';
     position: absolute;
     height: 4px;
-    background-color: blue;
+    background-color: #2e2e44;
     transform: rotate(-45deg);
     border-radius: 50px;
     width: 20px;
@@ -91,7 +91,7 @@
     font-size: 20px;
     font-weight: 600;
     padding: 0px 5px 7px 5px;
-    color: blue;
+    color: #2e2e44;
     height: 0;
 
     @media (min-width: $mobile-size-land){
@@ -100,7 +100,7 @@
   }
 
   &__content-text {
-  color: black;
+  color: #2e2e44;
   font-size: 12px;
   padding: 5px 5px 0 5px;
 
@@ -115,7 +115,7 @@
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: #040e4bde;
+  background-color: #0000009e;
   margin: auto;
   text-align: center; 
   top: 0;

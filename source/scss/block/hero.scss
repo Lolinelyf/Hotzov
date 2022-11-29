@@ -4,15 +4,16 @@
   padding: 0px 15px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1260px;
-  background-color: #f7f7f7;
+  max-width: 1300px;
+  box-shadow: 0 0 30px #85a4fd42;
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 30px;
+  background-color: rgba(246, 255, 254, 0.28);
 
   @media (min-width: $tablet-size-land) {
-    border-radius: 90px;
-    padding: 15px 15px;
+    border-radius: 50px;
+    padding: 15px 30px;
   }
 
   &__none {
@@ -104,6 +105,7 @@
     @media (min-width: $desktop-size-small) {
       width: 378px;
       height: 479px;
+      right: -50px;
     }
   }
 

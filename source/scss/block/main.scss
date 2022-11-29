@@ -1,4 +1,33 @@
 .main {
 width: 100%;
+
 }
 
+.activet {
+  background-color: #FFFFFF;
+}
+
+.jscontent {
+  display: none;
+  padding: 10px 20px;
+  animation: swipe 1200ms ease;
+  transition: all 160ms ease;
+
+}
+
+.jscontent.activet {
+  display: block;
+
+}
+
+ @keyframes swipe {
+    0% {
+      opacity: 0;
+      transform: translate3d(80%, 100px, 0) rotate3d(1, 1, 1, 15deg);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  

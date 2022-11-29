@@ -1871,7 +1871,10 @@ button {
         -ms-flex-pack: end;
             justify-content: flex-end;
     padding-bottom: 15px;
-    margin-right: 55px; }
+    margin-right: 0; }
+    @media (min-width: 576px) {
+      .sub__n-e {
+        margin-right: 55px; } }
     @media (min-width: 1200px) {
       .sub__n-e {
         margin-right: 0; } }
@@ -1920,23 +1923,25 @@ button {
     width: 50px;
     height: 50px;
     margin: 0;
-    -webkit-box-shadow: 0 0 20px #1840E3;
-            box-shadow: 0 0 20px #1840E3;
+    -webkit-box-shadow: 0 0 20px #1840E3, 0 0 0 5px #0033ffa9;
+            box-shadow: 0 0 20px #1840E3, 0 0 0 5px #0033ffa9;
     -webkit-backface-visibility: visible;
             backface-visibility: visible;
     border-radius: 50%;
-    outline: 5px solid #0033ffa9;
     -webkit-transition: .15s;
     transition: .15s; }
     @media (min-width: 1080px) {
       .sub__circle {
         margin: auto; } }
   .sub .white {
-    outline: 5px solid #d5d7ffa9; }
+    -webkit-box-shadow: 0 0 20px #1840E3, 0 0 0 5px #d5d7ffa9;
+            box-shadow: 0 0 20px #1840E3, 0 0 0 5px #d5d7ffa9; }
   .sub .white-blue {
-    outline: 5px solid #ffffffa9; }
+    -webkit-box-shadow: 0 0 20px #1840E3, 0 0 0 5px #cdcdcd;
+            box-shadow: 0 0 20px #1840E3, 0 0 0 5px #cdcdcd; }
   .sub .blue {
-    outline: 5px solid #6c89ffa9; }
+    -webkit-box-shadow: 0 0 20px #1840E3, 0 0 0 5px #6c89ffa9;
+            box-shadow: 0 0 20px #1840E3, 0 0 0 5px #6c89ffa9; }
   .sub__circle:hover {
     background-color: transparent;
     -webkit-transform: scale(1.1);
@@ -1984,8 +1989,6 @@ button {
     color: #333d64;
     border-radius: 10px;
     letter-spacing: 2px;
-    -webkit-box-shadow: 0 0 10px #1841e36e;
-            box-shadow: 0 0 10px #1841e36e;
     height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content;
@@ -2016,7 +2019,9 @@ button {
     -webkit-writing-mode: vertical-lr;
         -ms-writing-mode: tb-lr;
             writing-mode: vertical-lr;
-    text-orientation: upright; }
+    text-orientation: upright;
+    -webkit-box-shadow: 0 0 15px #495c9f;
+            box-shadow: 0 0 15px #495c9f; }
     @media (min-width: 768px) {
       .sub .size-two {
         -webkit-writing-mode: horizontal-tb;

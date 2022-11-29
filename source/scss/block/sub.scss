@@ -31,7 +31,11 @@
     flex-wrap: nowrap;
     justify-content: flex-end;
     padding-bottom: 15px;
-    margin-right: 55px;
+    margin-right: 0;
+
+    @media (min-width: $mobile-size-land) {
+      margin-right: 55px;
+    }
 
     @media (min-width: $desktop-size-small) {
       margin-right: 0;
@@ -72,10 +76,10 @@
     width: 50px;
     height: 50px;
     margin: 0;
-    box-shadow: 0 0 20px #1840E3;
+    box-shadow: 0 0 20px #1840E3,
+                0 0 0 5px #0033ffa9;
     backface-visibility: visible;
     border-radius: 50%;
-    outline: 5px solid #0033ffa9;
     transition: .15s;
 
     @media (min-width: $tablet-size-land) {
@@ -84,15 +88,19 @@
   }
 
   .white {
-    outline: 5px solid #d5d7ffa9;
+    box-shadow: 0 0 20px #1840E3,
+                0 0 0 5px #d5d7ffa9;
   }
 
   .white-blue {
-    outline: 5px solid #ffffffa9;
+    box-shadow: 0 0 20px #1840E3,
+                0 0 0 5px rgba(205, 205, 205, 27%);
   }
 
   .blue {
-    outline: 5px solid #6c89ffa9;
+    box-shadow: 0 0 20px #1840E3,
+                0 0 0 5px #6c89ffa9;
+    
   }
 
   &__circle:hover {
@@ -142,7 +150,6 @@
     color: #333d64;
     border-radius: 10px;
     letter-spacing: 2px;
-    box-shadow: 0 0 10px #1841e36e;
     height: min-content;
     margin: 5% 15px 0 0;
     padding: 0 5px;
@@ -171,6 +178,7 @@
   .size-two {
     writing-mode: vertical-lr;
     text-orientation: upright;
+    box-shadow: 0 0 15px #495c9f;
 
     @media (min-width: $tablet-size-port) {
       writing-mode: horizontal-tb;

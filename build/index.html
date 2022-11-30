@@ -86,14 +86,14 @@
         <nav class="navigation__items">
           <button class="navigation__links js-tabs activet" data-id="histori">история</button>
           <button class="navigation__links js-tabs" data-id="sub">отзывы</button>
-          <button class="navigation__links js-tabs" data-id="">поздравления</button>
+          <button class="navigation__links js-tabs" data-id="date">карта</button>
         </nav>
       </div>
     </section>
 
 
 
-    <section class="sub jscontent" id="sub">
+    <section class="sub jscontent" id="date">
       <div class="container sub__container">
         <div class="sub__desk-contain">
           <div class="sub__no-wrap">
@@ -282,7 +282,7 @@
                   fill="#263238" />
                 <path
                   d="M190.5 478.102C86.9466 478.102 3 395.947 3 294.602C3 193.258 86.9466 111.102 190.5 111.102C294.053 111.102 378 193.258 378 294.602C378 395.947 294.053 478.102 190.5 478.102Z"
-                  fill="rgba(50, 50, 50, 7%)" />
+                  fill="#f0f0f0" />
                 <path
                   d="M50.0751 313.717L64.5799 276.513L116.555 309.18L70.0191 380.562C70.0191 380.562 51.2839 356.062 50.0751 313.717Z"
                   fill="#EB996E" />
@@ -456,13 +456,14 @@
         </div>
 
       </section>
+      <section class="jscontent" id="sub">
       <section class="comments container">
 
         <div class="comments__pictures">
           <svg class="comments__girl" viewBox="0 0 429 517" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M214.307 517C95.9483 517 -6.10352e-05 425.388 -6.10352e-05 312.379C-6.10352e-05 199.371 95.9483 107.759 214.307 107.759C332.665 107.759 428.614 199.371 428.614 312.379C428.614 425.388 332.665 517 214.307 517Z"
-              fill="rgba(50, 50, 50, 7%)" />
+              fill="#f0f0f0" />
             <path
               d="M237.917 11.5759C260.083 12.8621 268.757 35.6923 271.327 40.8372C273.897 45.982 274.218 51.7699 274.86 57.5579C275.503 63.3458 276.145 69.1338 279.037 74.2786C283.855 81.9959 294.135 86.1761 297.027 94.858C300.239 104.826 292.208 115.116 294.135 125.405C295.42 130.872 299.275 135.374 300.56 140.84C302.167 146.306 300.56 152.416 297.669 157.561C290.28 170.101 275.503 176.211 261.047 176.854C246.59 177.497 232.455 172.995 218.963 168.815"
               fill="#263238" />
@@ -604,11 +605,11 @@
               d="M100.101 378.146C100.422 378.146 101.065 375.252 104.599 372.679C106.205 371.393 108.775 370.428 111.666 370.428C112.951 370.428 114.557 371.072 116.163 371.393C117.77 371.715 119.697 372.036 121.625 371.072C123.552 370.107 124.516 368.178 125.158 366.57C125.801 364.962 126.122 363.354 126.765 362.068C127.728 359.496 129.977 357.888 132.226 357.245C136.402 355.959 139.293 357.888 139.293 357.566C139.293 357.566 138.972 356.923 137.687 356.602C136.402 355.959 134.475 355.637 132.226 356.28C129.977 356.923 127.086 358.531 125.801 361.747C125.158 363.354 124.837 364.64 124.195 366.248C123.552 367.856 122.91 369.142 121.625 369.785C119.055 371.072 115.521 369.142 112.309 369.142C109.096 369.142 106.205 370.428 104.599 372.036C100.101 374.93 100.101 378.146 100.101 378.146Z"
               fill="#FAFAFA" />
           </svg>
-          <a class="comments__otziv-link" href="#">
-            <p class="comments__font">оставить отзыв</p>
+          <a class="comments__otziv-link js-link" href="#">
+            <p class="comments__font js-tc">оставить отзыв</p>
           </a>
-          <a class="comments__pozdr-link" href="#">
-            <p class="comments__font">поздравить</p>
+          <a class="comments__pozdr-link js-link" href="#">
+            <p class="comments__font js-tc">поздравить</p>
           </a>
 
         </div>
@@ -621,7 +622,24 @@
           </p>
         </div>
 
+        <form class="review">
+          <div class="review__overlay"></div>
+            <div class="review__modal">
+    
+              <button class="review__close"></button>
+  
+              <div class="review__input">
+              <input class="review__name" type="name" placeholder="Как вас зовут?">
+              <input class="review__email" type="email" placeholder="Ваш email?">
+              <textarea name="" id="" cols="" rows="" class="review__textarea" placeholder="Самые лестные слова из известных"></textarea>
+              <button class="review__send"></button>
+
+              </div>                
+            </div>         
+        </form>
+
       </section>
+     
       <section class="kob">
 
         <div class="container kob__container">
@@ -807,6 +825,7 @@
 
         </div>
 
+      </section>
       </section>
     </section>
 

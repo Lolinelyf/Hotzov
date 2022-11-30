@@ -1,0 +1,141 @@
+.review {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  &__overlay {
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &__modal {
+    position: relative;
+    margin: 10% auto;
+    width: 35%;
+    height: 55%;
+    border-radius: 5px;
+    // background-color: #fbfbfd;
+    background: linear-gradient(45deg, #d8e3fb 3%, #f2f4ff 13%, #fbfbfd 70%, #d2e9ff 90%, #eaceff 100%);
+    box-shadow: 0 0 100px #ffffff29, 
+    0 0 100px #6d85ff4a;
+  }
+
+  &__close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 4.5px;
+    right: 6px;
+    border-radius: 50%;
+    background-color: #FFF;
+    transition: .3s;
+
+    &::after,
+    &::before  {
+      content: '';
+      position: absolute;
+      background-color: #484958;
+      border-radius: 2px;
+      width: 2.5px;
+      height: 15px;
+      right: 14.5px;
+      top: 8px;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+
+    &:hover {
+      background-color: transparent;
+
+      &::after, &::before {
+        background-color: #000;
+      }
+    }
+  }
+
+  &__send {
+    width: 100%;
+    height: 10%;
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 100px;
+    height: 100%;
+  }
+
+  &__name, &__email, &__textarea {
+    margin: 7px 0;
+    padding: 5px;
+    font-size: 12px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #7d8295;
+    border: 1px solid #55586414;
+    background: none;
+    transition: .25s;
+  }
+
+  &__name:focus, &__email:focus, &__textarea:focus{
+    box-shadow: 0 0 10px #999ba5;
+    border: 2px solid #ffffff00;
+    outline: none;
+  }
+
+  &__name, &__email {
+    height: 7%;
+  }
+
+  // &__name {
+  //   margin: 30px 0 0 0;
+  // }
+
+  &__textarea {   
+    min-height: 35%;
+    resize: none;
+    margin: 40px 0 15px 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__send {
+    background: linear-gradient(45deg, #5a5a5a 2%, #666666 6%, #484958 63%, #6c6c6c 87%, #686868 100%);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  
+}
+
+.close.review__overlay {
+  display: block;
+}
+
+.close.review {
+  display: block;
+}

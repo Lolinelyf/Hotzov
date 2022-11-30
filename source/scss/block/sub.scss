@@ -77,7 +77,7 @@
     height: 50px;
     margin: 0;
     box-shadow: 0 0 20px #1840E3,
-                0 0 0 5px #0033ffa9;
+                0 0 0 5px #0033ffd1;
     backface-visibility: visible;
     border-radius: 50%;
     transition: .15s;
@@ -112,6 +112,7 @@
     font-weight: 600;
     text-align: center;
     margin-top: 14px;
+    color: #333d64;
   }
 
   &__text-container {
@@ -141,6 +142,7 @@
     font-size: 10px;
     font-weight: 500;
     margin-bottom: 5px;
+    color: #333d64;
   }
 
   &__name {
@@ -254,6 +256,7 @@
     margin: 10px 0 0 10px;
     font-size: 8px;
     font-weight: 500;
+    color: #333d64;
 
     @media (min-width: $desktop-size-small) {
       display: none;
@@ -268,11 +271,11 @@
   }
 
   &__ncfu-name {
-    color: #1840E3;
+    color: #254ef5;
     font-size: 32px;
     font-weight: 900;
     background-color: #FFFFFF;
-    box-shadow: 0 0 20px #00000052;
+    box-shadow: 0 0 20px #9aaeef;
     border-radius: 10px;
     padding-left: 10px;
     letter-spacing: 13px;

@@ -333,6 +333,7 @@ button {
     cursor: pointer;
     transition: none;
     object-fit: cover;
+    max-width: 20%;
   }
 
   .js-img-item.thamb:hover {

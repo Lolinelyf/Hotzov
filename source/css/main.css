@@ -1782,7 +1782,8 @@ button {
     -webkit-transition: none;
     transition: none;
     -o-object-fit: cover;
-       object-fit: cover; }
+       object-fit: cover;
+    max-width: 20%; }
   .gallery .js-img-item.thamb:hover {
     -webkit-filter: brightness(0.3);
             filter: brightness(0.3);

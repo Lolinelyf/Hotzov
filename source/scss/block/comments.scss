@@ -29,7 +29,7 @@
       margin-left: 36vw;
       margin-top: -21vw;
     }
-    
+
     @media (min-width: $tablet-size-port) {
       margin-left: 38.6vw;
       margin-top: -21.5vw;
@@ -60,7 +60,8 @@
     }
 
     @media (min-width: $desktop-size-average) {
-      width: 751px;;
+      width: 751px;
+      ;
     }
   }
 
@@ -103,7 +104,7 @@
     background-color: #082fcf;
     text-align: center;
     border-radius: 40px 5px;
-    height: fit-content; 
+    height: fit-content;
     transition: .5s;
     font-size: 5vw;
     width: 34vw;
@@ -126,7 +127,7 @@
     right: 25px;
     width: 35vw;
     height: 7.5vw;
-  
+
     @media (min-width: $mobile-size-land) {
       top: 30px;
       right: 25px;
@@ -145,7 +146,7 @@
     position: absolute;
     text-decoration: none;
     top: -45px;
-    left: 25px; 
+    left: 25px;
     width: 35vw;
     height: 7.5vw;
 

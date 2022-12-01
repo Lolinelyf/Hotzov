@@ -22,13 +22,30 @@
   &__modal {
     position: relative;
     margin: 10% auto;
-    width: 35%;
-    height: 55%;
+    width: 65%;
+    height: 40%;
     border-radius: 5px;
-    // background-color: #fbfbfd;
     background: linear-gradient(45deg, #d8e3fb 3%, #f2f4ff 13%, #fbfbfd 70%, #d2e9ff 90%, #eaceff 100%);
-    box-shadow: 0 0 100px #ffffff29, 
-    0 0 100px #6d85ff4a;
+    box-shadow: 0 0 100px #ffffff29,
+      0 0 100px #6d85ff4a;
+
+    @media (min-width: $mobile-size-land) {
+      width: 55%;
+      height: 40%;
+    }
+
+    @media (min-width: $tablet-size-port) {
+      width: 50%;
+      height: 55%;
+    }
+
+    @media (min-width: $tablet-size-land) {
+      width: 40%;
+    }
+
+    @media (min-width: $desktop-size-small) {
+      width: 35%;
+    }
   }
 
   &__close {
@@ -42,7 +59,7 @@
     transition: .3s;
 
     &::after,
-    &::before  {
+    &::before {
       content: '';
       position: absolute;
       background-color: #484958;
@@ -61,11 +78,14 @@
       transform: rotate(-45deg);
     }
 
-    &:hover {
-      background-color: transparent;
+    @media (min-width: $tablet-size-port) {
+      &:hover {
+        background-color: transparent;
 
-      &::after, &::before {
-        background-color: #000;
+        &::after,
+        &::before {
+          background-color: #000;
+        }
       }
     }
   }
@@ -80,11 +100,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px 100px;
+    padding: 30px 30px;
     height: 100%;
+
+    @media (min-width: $tablet-size-port) {
+      padding: 30px 50px;
+    }
+
+    @media (min-width: $desktop-size-average) {
+      padding: 30px 100px;
+    }
   }
 
-  &__name, &__email, &__textarea {
+  &__name,
+  &__email,
+  &__textarea {
     margin: 7px 0;
     padding: 5px;
     font-size: 12px;
@@ -96,26 +126,26 @@
     transition: .25s;
   }
 
-  &__name:focus, &__email:focus, &__textarea:focus{
+  &__name:focus,
+  &__email:focus,
+  &__textarea:focus {
     box-shadow: 0 0 10px #999ba5;
     border: 2px solid #ffffff00;
     outline: none;
   }
 
-  &__name, &__email {
+  &__name,
+  &__email {
     height: 7%;
   }
 
-  // &__name {
-  //   margin: 30px 0 0 0;
-  // }
-
-  &__textarea {   
+  &__textarea {
     min-height: 35%;
     resize: none;
     margin: 40px 0 15px 0;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+
     &::-webkit-scrollbar {
       display: none;
     }
@@ -125,11 +155,23 @@
     background: linear-gradient(45deg, #5a5a5a 2%, #666666 6%, #484958 63%, #6c6c6c 87%, #686868 100%);
     color: #fff;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 12px;
     text-transform: uppercase;
+
+    @media (min-width: $mobile-size-land) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $tablet-size-port) {
+      font-size: 20px;
+    }
+
+    @media (min-width: $tablet-size-land) {
+      font-size: 24px;
+    }
   }
 
-  
+
 }
 
 .close.review__overlay {

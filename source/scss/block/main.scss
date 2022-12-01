@@ -1,6 +1,5 @@
 .main {
-width: 100%;
-
+  width: 100%;
 }
 
 .activet {
@@ -12,24 +11,21 @@ width: 100%;
   padding: 10px 20px;
   animation: swipe 1200ms ease;
   transition: all 160ms ease;
-
 }
 
 .jscontent.activet {
   display: block;
-
 }
 
- @keyframes swipe {
-    0% {
-      opacity: 0;
-      transform: translate3d(0, -2.5%, 0) rotate3d(1, 1, 1, 0deg);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
- 
+@keyframes swipe {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -2.5%, 0) rotate3d(1, 1, 1, 0deg);
   }
-  
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+}

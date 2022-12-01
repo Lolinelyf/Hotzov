@@ -133,25 +133,41 @@
   &__name:focus,
   &__email:focus,
   &__textarea:focus {
-    box-shadow: 0 0 10px #999ba5;
-    border: 2px solid #ffffff00;
+    transform: scale(1.025);
     outline: none;
+    box-shadow: 0 0 10px #999ba5;
+    border: 1px solid #0000002c;
+
+    @media (min-width: $tablet-size-port) {
+      box-shadow: 0 0 10px #999ba5;
+      border: 2px solid #ffffff00;
+      transform: scale(1);
+    }
   }
 
   &__name,
   &__email {
-    height: 7%;
+    height: 10%;
+    color: #10111a;
+
+    @media (min-width: $tablet-size-port) {
+      height: 7%;
+    }
   }
 
   &__textarea {
     min-height: 35%;
     resize: none;
-    margin: 40px 0 15px 0;
+    margin: 25px 0 15px 0;
+    color: #10111a;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-
     &::-webkit-scrollbar {
       display: none;
+    }
+
+    @media (min-width: $tablet-size-port) {
+      margin: 40px 0 15px 0;
     }
   }
 

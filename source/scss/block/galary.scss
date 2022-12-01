@@ -337,19 +337,23 @@ button {
   }
 
   .js-img-item.thamb:hover {
-    filter: brightness(.3);
-    transition: 0.25s;
-    -webkit-transform: scale(.99);
-    -ms-transform: scale(.99);
-    transform: scale(.99);
+      @media (min-width: $mobile-size-land) {
+      filter: brightness(.3);
+      transition: 0.25s;
+      -webkit-transform: scale(.99);
+      -ms-transform: scale(.99);
+      transform: scale(.99);
+    }
   }
 
   .js-img-item:hover:not(.thamb) {
-    filter: brightness(1);
-    transition: 0.25s;
-    -webkit-transform: scale(1.01);
-    -ms-transform: scale(1.01);
-    transform: scale(1.01);
+    @media (min-width: $mobile-size-land) {
+      filter: brightness(1);
+      transition: 0.25s;
+      -webkit-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+      transform: scale(1.01);
+    }
   }
 }
 

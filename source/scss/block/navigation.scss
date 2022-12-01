@@ -15,8 +15,8 @@
 
   &__items {
     display: flex;
-    justify-content: space-between;
-    padding-top: 5px;
+    justify-content: space-around;
+    padding-top: 10px;
 
     @media (min-width: $tablet-size-land) {
       padding-top: 80px;

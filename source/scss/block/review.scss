@@ -21,7 +21,7 @@
 
   &__modal {
     position: relative;
-    margin: 10% auto;
+    margin: 45% auto;
     width: 65%;
     height: 40%;
     border-radius: 5px;
@@ -32,15 +32,19 @@
     @media (min-width: $mobile-size-land) {
       width: 55%;
       height: 40%;
+      margin: 30% auto;
+      
     }
 
     @media (min-width: $tablet-size-port) {
       width: 50%;
       height: 55%;
+      margin: 20% auto;
     }
 
     @media (min-width: $tablet-size-land) {
       width: 40%;
+      margin: 10% auto;
     }
 
     @media (min-width: $desktop-size-small) {

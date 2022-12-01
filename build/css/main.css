@@ -877,8 +877,7 @@ input[type="radio"].visually-hidden {
   min-height: -moz-max-content;
   min-height: max-content;
   padding: 0px 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 15px auto;
   max-width: 1300px;
   -webkit-box-shadow: 0 0 30px #85a4fd42;
           box-shadow: 0 0 30px #85a4fd42;
@@ -889,7 +888,7 @@ input[type="radio"].visually-hidden {
   @media (min-width: 1080px) {
     .hero {
       border-radius: 50px;
-      padding: 15px 30px; } }
+      padding: 0 30px; } }
   .hero__none {
     display: none; }
   .hero__prew {

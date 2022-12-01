@@ -6,10 +6,10 @@
   }
 
   &__container {
-    padding: 30px 15px;
     border-radius: 50px;
     background-color: rgba(246, 255, 254, 0.28);
     box-shadow: 0 0 30px #004eff1f;
+    margin-bottom: 15px;
 
   }
 
@@ -30,8 +30,9 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-end;
-    padding-bottom: 15px;
     margin-right: 0;
+    margin-top: 20px;
+    padding-top: 30px;
 
     @media (min-width: $mobile-size-land) {
       margin-right: 55px;
@@ -39,7 +40,8 @@
 
     @media (min-width: $desktop-size-small) {
       margin-right: 0;
-    }
+      padding-top: 0;
+    }   
   }
 
   &__desk {
@@ -67,7 +69,7 @@
     display: flex;
     flex-flow: column;
     width: 121px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
 
 
@@ -154,23 +156,23 @@
     border-radius: 10px;
     letter-spacing: 2px;
     height: min-content;
-    margin: 5% 15px 0 0;
+    margin: 0 30px 0 10px;
     padding: 0 5px;
 
-
     @media (min-width: $tablet-size-land) {
-      writing-mode: horizontal-tb;
-      text-orientation: upright;
       font-size: 26px;
+      margin: 16% -40px 0 0;
+    }
+
+    @media (min-width: $desktop-size-small) {
       margin: 20% -40px 0 0;
     }
   }
 
   .size {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
     box-shadow: 0 0 15px #1841e3ab;
-    ;
+    writing-mode: vertical-lr;
+    text-orientation: upright; 
 
     @media (min-width: $tablet-size-land) {
       writing-mode: horizontal-tb;
@@ -179,9 +181,9 @@
   }
 
   .size-two {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
     box-shadow: 0 0 15px #495c9f;
+    writing-mode: vertical-lr;
+    text-orientation: upright; 
 
     @media (min-width: $tablet-size-port) {
       writing-mode: horizontal-tb;
@@ -190,9 +192,9 @@
   }
 
   .size-three {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
     box-shadow: 0 0 15px #1841e3e3;
+    writing-mode: vertical-lr;
+    text-orientation: upright; 
 
     @media (min-width: $mobile-size-land) {
       writing-mode: horizontal-tb;
@@ -203,6 +205,7 @@
   &__circle-date-q {
     display: flex;
     flex-wrap: nowrap;
+    
 
     @media (min-width: $desktop-size-small) {
       margin: auto;
@@ -215,11 +218,12 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-self: center;
-    bottom: 0;
-    margin: 0 0 0 70px;
+    margin: 10px 0 0 0;
+    align-items: center;
 
     @media (min-width: $tablet-size-port) {
-      bottom: 137px;
+      bottom: 130px;
+      margin-left: 10px;
       align-items: flex-start;
     }
 

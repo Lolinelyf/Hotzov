@@ -726,7 +726,6 @@ input[type="radio"].visually-hidden {
 
 .jscontent {
   display: none;
-  padding: 10px 20px;
   -webkit-animation: swipe 1200ms ease;
           animation: swipe 1200ms ease;
   -webkit-transition: all 160ms ease;
@@ -877,8 +876,7 @@ input[type="radio"].visually-hidden {
   min-height: -moz-max-content;
   min-height: max-content;
   padding: 0px 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 15px auto;
   max-width: 1300px;
   -webkit-box-shadow: 0 0 30px #85a4fd42;
           box-shadow: 0 0 30px #85a4fd42;
@@ -889,7 +887,7 @@ input[type="radio"].visually-hidden {
   @media (min-width: 1080px) {
     .hero {
       border-radius: 50px;
-      padding: 15px 30px; } }
+      padding: 0 30px; } }
   .hero__none {
     display: none; }
   .hero__prew {
@@ -1824,11 +1822,11 @@ button {
   .sub__no-wrap {
     position: relative; }
   .sub__container {
-    padding: 30px 15px;
     border-radius: 50px;
     background-color: rgba(246, 255, 254, 0.28);
     -webkit-box-shadow: 0 0 30px #004eff1f;
-            box-shadow: 0 0 30px #004eff1f; }
+            box-shadow: 0 0 30px #004eff1f;
+    margin-bottom: 15px; }
   .sub__desk-contain {
     display: block; }
     @media (min-width: 1200px) {
@@ -1851,14 +1849,16 @@ button {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    padding-bottom: 15px;
-    margin-right: 0; }
+    margin-right: 0;
+    margin-top: 20px;
+    padding-top: 30px; }
     @media (min-width: 576px) {
       .sub__n-e {
         margin-right: 55px; } }
     @media (min-width: 1200px) {
       .sub__n-e {
-        margin-right: 0; } }
+        margin-right: 0;
+        padding-top: 0; } }
   .sub__desk {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1898,7 +1898,7 @@ button {
         -ms-flex-flow: column;
             flex-flow: column;
     width: 121px;
-    padding-bottom: 10px; }
+    margin-bottom: 10px; }
   .sub__circle {
     background-color: #f8f8f8;
     width: 50px;
@@ -1976,23 +1976,22 @@ button {
     height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content;
-    margin: 5% 15px 0 0;
+    margin: 0 30px 0 10px;
     padding: 0 5px; }
     @media (min-width: 1080px) {
       .sub__name {
-        -webkit-writing-mode: horizontal-tb;
-            -ms-writing-mode: lr-tb;
-                writing-mode: horizontal-tb;
-        text-orientation: upright;
         font-size: 26px;
+        margin: 16% -40px 0 0; } }
+    @media (min-width: 1200px) {
+      .sub__name {
         margin: 20% -40px 0 0; } }
   .sub .size {
+    -webkit-box-shadow: 0 0 15px #1841e3ab;
+            box-shadow: 0 0 15px #1841e3ab;
     -webkit-writing-mode: vertical-lr;
         -ms-writing-mode: tb-lr;
             writing-mode: vertical-lr;
-    text-orientation: upright;
-    -webkit-box-shadow: 0 0 15px #1841e3ab;
-            box-shadow: 0 0 15px #1841e3ab; }
+    text-orientation: upright; }
     @media (min-width: 1080px) {
       .sub .size {
         -webkit-writing-mode: horizontal-tb;
@@ -2000,12 +1999,12 @@ button {
                 writing-mode: horizontal-tb;
         text-orientation: upright; } }
   .sub .size-two {
+    -webkit-box-shadow: 0 0 15px #495c9f;
+            box-shadow: 0 0 15px #495c9f;
     -webkit-writing-mode: vertical-lr;
         -ms-writing-mode: tb-lr;
             writing-mode: vertical-lr;
-    text-orientation: upright;
-    -webkit-box-shadow: 0 0 15px #495c9f;
-            box-shadow: 0 0 15px #495c9f; }
+    text-orientation: upright; }
     @media (min-width: 768px) {
       .sub .size-two {
         -webkit-writing-mode: horizontal-tb;
@@ -2013,12 +2012,12 @@ button {
                 writing-mode: horizontal-tb;
         text-orientation: upright; } }
   .sub .size-three {
+    -webkit-box-shadow: 0 0 15px #1841e3e3;
+            box-shadow: 0 0 15px #1841e3e3;
     -webkit-writing-mode: vertical-lr;
         -ms-writing-mode: tb-lr;
             writing-mode: vertical-lr;
-    text-orientation: upright;
-    -webkit-box-shadow: 0 0 15px #1841e3e3;
-            box-shadow: 0 0 15px #1841e3e3; }
+    text-orientation: upright; }
     @media (min-width: 576px) {
       .sub .size-three {
         -webkit-writing-mode: horizontal-tb;
@@ -2047,11 +2046,14 @@ button {
             flex-direction: column;
     -ms-flex-item-align: center;
         align-self: center;
-    bottom: 0;
-    margin: 0 0 0 70px; }
+    margin: 10px 0 0 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     @media (min-width: 768px) {
       .sub__data-ncfu {
-        bottom: 137px;
+        bottom: 130px;
+        margin-left: 10px;
         -webkit-box-align: start;
             -ms-flex-align: start;
                 align-items: flex-start; } }

@@ -738,8 +738,11 @@ input[type="radio"].visually-hidden {
 @-webkit-keyframes swipe {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 2.5%, 0) rotate3d(1, 1, 1, 0deg);
-            transform: translate3d(0, 2.5%, 0) rotate3d(1, 1, 1, 0deg); }
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  1% {
+    -webkit-transform: translate3d(0, 2.5%, 0);
+            transform: translate3d(0, 2.5%, 0); }
   100% {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
@@ -748,8 +751,11 @@ input[type="radio"].visually-hidden {
 @keyframes swipe {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 2.5%, 0) rotate3d(1, 1, 1, 0deg);
-            transform: translate3d(0, 2.5%, 0) rotate3d(1, 1, 1, 0deg); }
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  1% {
+    -webkit-transform: translate3d(0, 2.5%, 0);
+            transform: translate3d(0, 2.5%, 0); }
   100% {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
@@ -1257,11 +1263,12 @@ input[type="radio"].visually-hidden {
     @media (min-width: 1080px) {
       .kob__otz-container {
         padding: 60px 30px 20px 0; } }
-  .kob__people-container .kob__people:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: .3s;
-    transition: .3s; }
+  @media (min-width: 576px) {
+    .kob__people-container .kob__people:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      -webkit-transition: .3s;
+      transition: .3s; } }
   .kob__people-container {
     display: inline-block;
     overflow: hidden;

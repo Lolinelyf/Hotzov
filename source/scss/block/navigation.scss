@@ -49,44 +49,44 @@
       padding-top: 30px;
       padding-bottom: 26px;
     }
-  }
 
-  &__links:hover {
-    box-shadow:
-      .5px .5px #082fcf,
-      1px 1px #082fcf,
-      1.5px 1.5px #082fcf,
-      2px 2px #082fcf,
-      2.5px 2.5px #082fcf,
-      3px 3px #082fcf,
-      3.5px 3.5px #082fcf,
-      -2.5px -2.5px #082fcf,
-      -1px -1px #082fcf,
-      -1.5px -1.5px #082fcf,
-      -2px -2px #082fcf,
-      -2.5px -2.5px #082fcf,
-      -3px -3px #082fcf,
-      -3.5px -3.5px #082fcf;
-    -webkit-transform: translate(15px, 7px);
-    transform: translate(15px, 7px);
-    background-color: #FFFFFF;
-
-    @media (min-width: $tablet-size-land) {
+    &:hover {
       box-shadow:
+        .5px .5px #082fcf,
         1px 1px #082fcf,
+        1.5px 1.5px #082fcf,
         2px 2px #082fcf,
+        2.5px 2.5px #082fcf,
         3px 3px #082fcf,
-        4px 4px #082fcf,
-        5px 5px #082fcf,
-        6px 6px #082fcf,
-        7px 7px #082fcf,
-        -5px -5px #082fcf,
+        3.5px 3.5px #082fcf,
+        -2.5px -2.5px #082fcf,
+        -1px -1px #082fcf,
+        -1.5px -1.5px #082fcf,
         -2px -2px #082fcf,
+        -2.5px -2.5px #082fcf,
         -3px -3px #082fcf,
-        -4px -4px #082fcf,
-        -5px -5px #082fcf,
-        -6px -6px #082fcf,
-        -7px -7px #082fcf;
+        -3.5px -3.5px #082fcf;
+      -webkit-transform: translate(15px, 7px);
+      transform: translate(15px, 7px);
+      background-color: #FFFFFF;
+  
+      @media (min-width: $tablet-size-land) {
+        box-shadow:
+          1px 1px #082fcf,
+          2px 2px #082fcf,
+          3px 3px #082fcf,
+          4px 4px #082fcf,
+          5px 5px #082fcf,
+          6px 6px #082fcf,
+          7px 7px #082fcf,
+          -5px -5px #082fcf,
+          -2px -2px #082fcf,
+          -3px -3px #082fcf,
+          -4px -4px #082fcf,
+          -5px -5px #082fcf,
+          -6px -6px #082fcf,
+          -7px -7px #082fcf;
+      }
     }
   }
 }

@@ -1,33 +1,3 @@
 .main {
   width: 100%;
 }
-
-.activet {
-  background-color: #FFFFFF;
-}
-
-.jscontent {
-  display: none;
-  animation: swipe 1200ms ease;
-  transition: all 160ms ease;
-}
-
-.jscontent.activet {
-  display: block;
-}
-
-@keyframes swipe {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 0, 0);
-  }
-
-  1% {
-    transform: translate3d(0, 2.5%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}

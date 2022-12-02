@@ -15,10 +15,6 @@
     padding: 0 30px;
   }
 
-  &__none {
-    display: none;
-  }
-
   &__prew {
     position: relative;
   }
@@ -53,7 +49,7 @@
       padding-top: 40px;
     }
   }
-
+//целюсь на дивы которые создает js при анимации
   &__prew-mt-title div {
     display: inline-block;
   }
@@ -78,7 +74,7 @@
       width: 830px;
     }
   }
-
+//целюсь на дивы которые создает js при анимации
   &__prew-mt-text div {
     display: inline-block;
   }
@@ -141,37 +137,22 @@
     }
 
     @media (min-width: $desktop-size-small) {
-      border-radius: 50px;
       width: 370px;
       height: 241px;
     }
-  }
 
-  &__prew-img-container &__prew-img {
-    transition: 1s;
-    display: block;
-  }
-
-  &__prew-img-container &__prew-img:hover {
-    transition: .45s;
-  }
-
-  &__prew-img-container &__prew-img:not(:hover) {
-    -webkit-transform: scale(1.4);
-    -ms-transform: scale(1.4);
-    transform: scale(1.4);
-    transition: .6s;
-  }
-
-  &__prew-img-container:hover {
-    transition: .6s;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.87);
-  }
+    &:hover {
+      transition: .6s;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.87);
+    }
+  } 
 
   &__prew-img {
     border-radius: 25px;
     width: 27.5vw;
     height: 18.1vw;
+    transition: 1s;
+    display: block;
 
     @media (min-width: $mobile-size-land) {
       width: 29.5vw;
@@ -188,6 +169,17 @@
       border-radius: 50px;
       width: 370px;
       height: 242px;
+    }
+
+    &:hover {
+      transition: .45s;
+    }
+  
+    &:not(:hover) {
+      -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+      transform: scale(1.4);
+      transition: .6s;
     }
   }
 }

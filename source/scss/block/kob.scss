@@ -84,7 +84,6 @@
 
     @media (min-width: $tablet-size-port) {
       display: none;
-      ;
     }
   }
 
@@ -97,7 +96,6 @@
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
-      width: 22.6vw;
       font-size: 11px;
       left: 10px;
       width: 22vw;
@@ -121,8 +119,6 @@
 
   &__people-container &__people:hover {
     @media (min-width: $mobile-size-land) {
-      -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
       transform: scale(1.1);
       transition: .3s;
     }
@@ -142,7 +138,7 @@
     }
   }
 
-  &__people-container &__people {
+  &__people {
     transition: 1s;
     display: block;
   }

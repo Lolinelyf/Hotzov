@@ -52,13 +52,15 @@
     }
   }
 
-  &__csk-c {
+  &__csk-c, &__csk-s {
     width: 100%;
 
     @media (min-width: $mobile-size-land) {
       width: 52vw;
     }
+  }
 
+  &__csk-c {
     @media (min-width: $desktop-size-average) {
       width: 751px;
       ;
@@ -66,12 +68,6 @@
   }
 
   &__csk-s {
-    width: 100%;
-
-    @media (min-width: $mobile-size-land) {
-      width: 52vw;
-    }
-
     @media (min-width: $desktop-size-average) {
       width: 703px;
     }

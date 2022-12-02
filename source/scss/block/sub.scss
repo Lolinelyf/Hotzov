@@ -10,7 +10,6 @@
     background-color: rgba(246, 255, 254, 0.28);
     box-shadow: 0 0 30px #004eff1f;
     margin-bottom: 15px;
-
   }
 
   &__desk-contain {
@@ -44,21 +43,7 @@
     }   
   }
 
-  &__desk {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    height: 100%;
-  }
-
-  &__desk-two {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    height: 100%;
-  }
-
-  &__desk-three {
+  &__desk, &__desk-two, &__desk-three {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -71,7 +56,6 @@
     width: 121px;
     margin-bottom: 10px;
   }
-
 
   &__circle {
     background-color: #f8f8f8;
@@ -87,22 +71,23 @@
     @media (min-width: $tablet-size-land) {
       margin: auto;
     }
+
+    &_white {
+      box-shadow: 0 0 20px #1840E3,
+        0 0 0 5px #d5d7ffa9;
+    }
+  
+    &_white-blue {
+      box-shadow: 0 0 20px #1840E3,
+        0 0 0 5px rgba(205, 205, 205, 27%);
+    }
+  
+    &_blue {
+      box-shadow: 0 0 20px #1840E3,
+        0 0 0 5px #6c89ffa9;
+    }
   }
 
-  .white {
-    box-shadow: 0 0 20px #1840E3,
-      0 0 0 5px #d5d7ffa9;
-  }
-
-  .white-blue {
-    box-shadow: 0 0 20px #1840E3,
-      0 0 0 5px rgba(205, 205, 205, 27%);
-  }
-
-  .blue {
-    box-shadow: 0 0 20px #1840E3,
-      0 0 0 5px #6c89ffa9;
-  }
 
   @media (min-width: $tablet-size-port) {
     &__circle:hover {
@@ -167,45 +152,44 @@
     @media (min-width: $desktop-size-small) {
       margin: 20% -40px 0 0;
     }
-  }
 
-  .size {
-    box-shadow: 0 0 15px #1841e3ab;
-    writing-mode: vertical-lr;
-    text-orientation: upright; 
-
-    @media (min-width: $tablet-size-land) {
-      writing-mode: horizontal-tb;
-      text-orientation: upright;
+    &_size {
+      box-shadow: 0 0 15px #1841e3ab;
+      writing-mode: vertical-lr;
+      text-orientation: upright; 
+  
+      @media (min-width: $tablet-size-land) {
+        writing-mode: horizontal-tb;
+        text-orientation: upright;
+      }
     }
-  }
-
-  .size-two {
-    box-shadow: 0 0 15px #495c9f;
-    writing-mode: vertical-lr;
-    text-orientation: upright; 
-
-    @media (min-width: $tablet-size-port) {
-      writing-mode: horizontal-tb;
-      text-orientation: upright;
+  
+    &_size-two {
+      box-shadow: 0 0 15px #495c9f;
+      writing-mode: vertical-lr;
+      text-orientation: upright; 
+  
+      @media (min-width: $tablet-size-port) {
+        writing-mode: horizontal-tb;
+        text-orientation: upright;
+      }
     }
-  }
-
-  .size-three {
-    box-shadow: 0 0 15px #1841e3e3;
-    writing-mode: vertical-lr;
-    text-orientation: upright; 
-
-    @media (min-width: $mobile-size-land) {
-      writing-mode: horizontal-tb;
-      text-orientation: upright;
+  
+    &_size-three {
+      box-shadow: 0 0 15px #1841e3e3;
+      writing-mode: vertical-lr;
+      text-orientation: upright; 
+  
+      @media (min-width: $mobile-size-land) {
+        writing-mode: horizontal-tb;
+        text-orientation: upright;
+      }
     }
   }
 
   &__circle-date-q {
     display: flex;
-    flex-wrap: nowrap;
-    
+    flex-wrap: nowrap;  
 
     @media (min-width: $desktop-size-small) {
       margin: auto;
@@ -228,10 +212,6 @@
     }
 
     @media (min-width: $desktop-size-small) {
-      margin: 33% 0 0 120px;
-    }
-
-    @media (min-width: $desktop-size-average) {
       margin: 33% 0 0 120px;
     }
   }
@@ -303,5 +283,4 @@
       padding-left: 8px;
     }
   }
-
 }

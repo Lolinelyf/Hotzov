@@ -1,20 +1,3 @@
-button {
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
-  overflow: visible;
-  background: transparent;
-  color: inherit;
-  font: inherit;
-  line-height: normal;
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
 .gallery {
   position: fixed;
   visibility: hidden;
@@ -34,13 +17,11 @@ button {
 
     @media (min-width: $desktop-size-small) {
       margin: 7% auto;
-      width: 90%;
       height: 70%;
     }
 
     @media (min-width: $desktop-size-average-1) {
       width: 65%;
-      height: 70%;
     }
   }
 
@@ -71,49 +52,37 @@ button {
       width: 50px;
       height: 50px;
     }
-  }
 
-  &__button:hover {
-    @media (min-width: $mobile-size-land) {
-      background-color: rgba(0, 0, 0, 0.582);
+    &:hover {
+      @media (min-width: $mobile-size-land) {
+        background-color: rgba(0, 0, 0, 0.582);
+      }
     }
-  }
-
-  &__button::after {
-    content: '';
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    transform: rotate(-45deg);
-    border-radius: 50px;
-    width: 20px;
-    right: 7.51px;
-    top: 17px;
-    height: 3px;
-
-    @media (min-width: $tablet-size-port) {
-      width: 20px;
-      right: 15.51px;
-      top: 24px;
-      height: 3px;
+  
+    &::after {
+      transform: rotate(-45deg);
     }
-  }
 
-  &__button::before {
-    content: '';
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    transform: rotate(45deg);
-    border-radius: 50px;
-    width: 20px;
-    right: 7.51px;
-    top: 17px;
-    height: 3px;
-
-    @media (min-width: $tablet-size-port) {
+    &::after, &::before {
+      content: '';
+      position: absolute;
+      background-color: rgb(255, 255, 255);
+      border-radius: 50px;
       width: 20px;
-      right: 15.51px;
-      top: 24px;
+      right: 7.51px;
+      top: 17px;
       height: 3px;
+
+      @media (min-width: $tablet-size-port) {
+        width: 20px;
+        right: 15.51px;
+        top: 24px;
+        height: 3px;
+      }
+    }
+  
+    &::before {
+      transform: rotate(45deg);
     }
   }
 
@@ -143,59 +112,57 @@ button {
       width: 70px;
       height: 170px;
     }
-  }
 
-  &__swipe-left:hover {
-    @media (min-width: $mobile-size-land) {
-      background-color: rgba(0, 0, 0, 0.582);
-    }
-  }
-
-  &__swipe-left::after {
-    content: '';
-    position: absolute;
-    height: 4px;
-    background-color: rgb(255, 255, 255);
-    transform: rotate(-45deg);
-    border-radius: 50px;
-    width: 20px;
-    left: 5px;
-    top: 39.5%;
-
-    @media (min-width: $mobile-size-land) {
-      width: 25px;
-      left: 10px;
-      top: 40%;
+    &:hover {
+      @media (min-width: $mobile-size-land) {
+        background-color: rgba(0, 0, 0, 0.582);
+      }
     }
 
-    @media (min-width: $tablet-size-port) {
-      width: 35px;
-      left: 15px;
-      top: 42%;
+    &::after, &::before {
+      content: '';
+      position: absolute;
+      height: 4px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 50px;
+      width: 20px;
+      left: 5px;
+
+      @media (min-width: $mobile-size-land) {
+        width: 25px;
+        left: 10px;
+      }
+  
+      @media (min-width: $tablet-size-port) {
+        width: 35px;
+        left: 15px;
+      }
     }
-  }
-
-  &__swipe-left::before {
-    content: '';
-    position: absolute;
-    height: 4px;
-    background-color: rgb(255, 255, 255);
-    transform: rotate(45deg);
-    border-radius: 50px;
-    width: 20px;
-    left: 5px;
-    bottom: 39.5%;
-
-    @media (min-width: $mobile-size-land) {
-      width: 25px;
-      left: 10px;
-      bottom: 40%;
+  
+    &::after {
+      transform: rotate(-45deg);
+      top: 39.5%;
+  
+      @media (min-width: $mobile-size-land) {
+        top: 40%;
+      }
+  
+      @media (min-width: $tablet-size-port) {
+        top: 42%;
+      }
     }
-
-    @media (min-width: $tablet-size-port) {
-      width: 35px;
-      left: 15px;
-      bottom: 42.5%;
+  
+    &::before {
+      transform: rotate(45deg);
+      bottom: 39.5%;
+  
+      @media (min-width: $mobile-size-land) {
+        bottom: 40%;
+      }
+  
+      @media (min-width: $tablet-size-port) {
+        bottom: 42.5%;
+      }
     }
   }
 
@@ -225,59 +192,57 @@ button {
       width: 70px;
       height: 170px;
     }
-  }
 
-  &__swipe-right:hover {
-    @media (min-width: $mobile-size-land) {
-      background-color: rgba(0, 0, 0, 0.582);
-    }
-  }
-
-  &__swipe-right::after {
-    content: '';
-    position: absolute;
-    height: 4px;
-    background-color: rgb(255, 255, 255);
-    transform: rotate(45deg);
-    border-radius: 50px;
-    width: 20px;
-    right: 5px;
-    top: 39.5%;
-
-    @media (min-width: $mobile-size-land) {
-      width: 25px;
-      right: 10px;
-      top: 40%;
+    &:hover {
+      @media (min-width: $mobile-size-land) {
+        background-color: rgba(0, 0, 0, 0.582);
+      }
     }
 
-    @media (min-width: $tablet-size-port) {
-      width: 35px;
-      right: 15px;
-      top: 42%;
+    &::after,  &::before {
+      content: '';
+      position: absolute;
+      height: 4px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 50px;
+      width: 20px;
+      right: 5px;
+
+      @media (min-width: $mobile-size-land) {
+        width: 25px;
+        right: 10px;
+      }
+
+      @media (min-width: $tablet-size-port) {
+        width: 35px;
+        bottom: 42.5%;
+      }
     }
-  }
-
-  &__swipe-right::before {
-    content: '';
-    position: absolute;
-    height: 4px;
-    background-color: rgb(255, 255, 255);
-    transform: rotate(-45deg);
-    border-radius: 50px;
-    width: 20px;
-    right: 5px;
-    bottom: 39.5%;
-
-    @media (min-width: $mobile-size-land) {
-      width: 25px;
-      right: 10px;
-      bottom: 40%;
+  
+    &::after {
+      transform: rotate(45deg);
+      top: 39.5%;
+  
+      @media (min-width: $mobile-size-land) {
+        top: 40%;
+      }
+  
+      @media (min-width: $tablet-size-port) {
+        top: 42%;
+      }
     }
-
-    @media (min-width: $tablet-size-port) {
-      width: 35px;
-      right: 15px;
-      bottom: 42.5%;
+  
+    &::before {
+      transform: rotate(-45deg);
+      bottom: 39.5%;
+  
+      @media (min-width: $mobile-size-land) {
+        bottom: 40%;
+      }
+  
+      @media (min-width: $tablet-size-port) {
+        bottom: 42.5%;
+      }
     }
   }
 
@@ -340,8 +305,6 @@ button {
       @media (min-width: $mobile-size-land) {
       filter: brightness(.3);
       transition: 0.25s;
-      -webkit-transform: scale(.99);
-      -ms-transform: scale(.99);
       transform: scale(.99);
     }
   }
@@ -350,8 +313,6 @@ button {
     @media (min-width: $mobile-size-land) {
       filter: brightness(1);
       transition: 0.25s;
-      -webkit-transform: scale(1.01);
-      -ms-transform: scale(1.01);
       transform: scale(1.01);
     }
   }
